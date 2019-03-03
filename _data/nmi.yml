@@ -1,0 +1,7 @@
+#Change 'set' to true or nothing will display!
+set: false
+#N.b. If adding a : seperator to your time, you must wrap it in '' or weird stuff happens
+time: '19:00'
+date: 01/03/1984
+location: Proxima Centauri
+
