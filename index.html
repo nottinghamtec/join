@@ -62,23 +62,30 @@
             background-color:rgb(52, 81, 166);
             border-radius: 5px;
             padding: 1rem;
+            border: 2px solid #FFF;
+        }
+        .hidden {
+            display: none;
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="static/scroll-appear.min.js"></script>
+    <script>new ScrollAppear(".appear");</script>
 </head>
-
 <body>
     <div class="container">
 		<div class="centre">
     		<h1 style="margin: 0.25rem; text-align: center;", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
-            <img src="static/images/tec_logo_white.png" style="width:100px">
-            
-			<h2 class="blue" style="margin-top: 0.25rem; text-align: center;">Join <em>TEC PA & Lighting</em></h2>
-            
+            <img src="static/images/tec_logo_white.png" style="width:100px" id="logo">
+            <div style="position: sticky; top: 0; width: 100%;" id="navbar">
+			<h2 class="blue" style="margin-top: 20px; text-align: center;">Join <em>TEC PA & Lighting</em></h2>
+            </div>
+            <h2 data-appear-offset="#logo" class="appear hidden">Test</h2>
             <p>TEC is entirely volunteer student run - by students, for students. We're always on the lookout for keen new members! Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn. TEC provides extensive training from winch stands to balanced audio.<br>We do events in the University of Nottingham Students Union and beyond. From festivals to bar nights, we do it all.<br>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
-            <div class="blue" style="border: 2px solid #FFF; padding-top: 0;">
-            <h2>New Members Introduction:</h2>            
+            <div class="blue" style="padding-top: 0;">
+            <h2>New Members Introduction:</h2>
+            <p>TODO: Add some information about what a NMI actually is</p>            
             {%if site.data.nmi.set%}
             <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
             {%else%}
@@ -97,6 +104,29 @@
             <li>Rob Kettridge (date-date) now manages (wording?) <a src="https://www.collegest.org.uk/technical">College Street</a></li>
             <li>David Taylor (2014-2018) now works for <a src="https://www.discourse.org/">Discourse</a>, the company that makes our forum software</li>
             <li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li><li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
+<li>Adam Robbins (date-date) now [insert stuff here]</li>
             </ul>
 	    </div>
     </div>
