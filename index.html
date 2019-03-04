@@ -58,6 +58,11 @@
                 padding: 0.5rem;
             }
         }
+        .blue {
+            background-color:rgb(52, 81, 166);
+            border-radius: 5px;
+            padding: 1rem;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -68,21 +73,25 @@
 		<div class="centre">
     		<h1 style="margin: 0.25rem; text-align: center;", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
             <img src="static/images/tec_logo_white.png" style="width:100px">
-			<h2 style="margin-top: 0.25rem; text-align: center;">Join TEC PA & Lighting</h2>
-            <p>TEC is run by students for students. We do all the events in the University of Nottingham Students Union and beyond. If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+            
+			<h2 class="blue" style="margin-top: 0.25rem; text-align: center;">Join <em>TEC PA & Lighting</em></h2>
+            
+            <p>TEC is entirely volunteer student run - by students, for students. We're always on the lookout for keen new members! Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn. TEC provides extensive training from winch stands to balanced audio.<br>We do events in the University of Nottingham Students Union and beyond. From festivals to bar nights, we do it all.<br>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+            <div class="blue" style="border: 2px solid #FFF; padding-top: 0;">
             <h2>New Members Introduction:</h2>            
             {%if site.data.nmi.set%}
             <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
             {%else%}
-            <h2>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!
+            <h3>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
             {%endif%}
-            <h3>Formal training TEC can provide [sometimes]:</h3>
+            </div>
+            <h2>Formal training TEC can provide [sometimes]:</h2>
             <ul>
             <li>Trailer (B+E) Licence</li>
             <li>Fire Awareness Training</li>
             <li>First Aid Training</li>
             </ul>
-            <h3>Beyond TEC:</h3>
+            <h2>Beyond TEC:</h2>
             <p>Many of our graduate members have jobs in the industry...when they're not hanging around in TEC!</p>
             <ul>
             <li>Rob Kettridge (date-date) now manages (wording?) <a src="https://www.collegest.org.uk/technical">College Street</a></li>
