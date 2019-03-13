@@ -86,7 +86,8 @@
     position: relative;
     background: rgb(52, 81, 166);
     border-radius: .4em;
-    } .speech-bubble-2:after {
+  } 
+  .speech-bubble-2:after {
       content: '';
       position: absolute;
       right: 0;
@@ -98,7 +99,7 @@
       border-right: 0;
       margin-top: -20px;
       margin-right: -20px;
-    }
+  }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -116,7 +117,10 @@
         <br>
         <div style="display: grid; grid-template-columns: auto 50% auto; grid-gap: 1em;">
           <div>
-            <p>We do events in the University of Nottingham Students Union and beyond. TEC provides extensive training from winch stands to balanced audio.</p><br><h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+            {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+            <br>
+            <h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
           </div>
           <div class="blue" style="padding-top: 0;">
             <h2>New Members Introduction:</h2>
@@ -125,13 +129,13 @@
             {%else%}
             <h4>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h4>
             {%endif%}
-            {% capture my_include %}{% include_relative content/nmi.md %}{% endcapture %}
-            {{ my_include | markdownify }}
+            {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
+            {{ my_include2 | markdownify }}
           </div>
           <div>
               <div style="display: flex; flex-flow: row nowrap;">
                 <div style="display: flex; flex-direction: column; align-items: center">
-                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em">
+                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em; border-radius: 0.1em">
                   <h3>Sam, Technical Director</h3>
                 </div>
                 <div class="speech-bubble" style="align-self: center">
@@ -140,7 +144,7 @@
               </div>
               <div style="display: flex; flex-flow: row-reverse nowrap;">
                 <div style="display: flex; flex-direction: column; align-items: center">
-                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em;">
+                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em; border-radius: 0.1em">
                   <h3>Adam, Treasurer</h3>
                 </div>
                 <div class="speech-bubble-2" style="align-self: center">
@@ -149,7 +153,7 @@
               </div>
               <div style="display: flex; flex-flow: row nowrap;">
                 <div style="display: flex; flex-direction: column; align-items: center">
-                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em">
+                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em; border-radius: 0.1em">
                   <h3>Phoebe, Members Officer</h3>
                 </div>
                 <div class="speech-bubble" style="align-self: center">
