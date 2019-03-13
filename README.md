@@ -1,2 +1,4 @@
 # TEC PA & Lighting 'Join TEC' Landing Page
-Watch this space. Will be using Jekyll not Hugo - makes no odds to me since I know neither. 
+A page to encourage people to join the UonSU event management company TEC PA & Lighting. Single page subsite of https://nottinghamtec.co.uk - seperate repo for a subdomain.
+
+I will attempt to make as much of the content on the page ~~muggle~~ as 'non-programmer friendly' as possible (by using markdown chunks included into the main page) 
