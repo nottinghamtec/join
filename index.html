@@ -126,12 +126,13 @@
             <h2>Our Members Say:</h2>
           </div>
           <div>
+            <div style="text-align: justify">
             {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
             {{ my_include | markdownify }}
-            <br>
-            <h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+            </div>
+            <h3>From festivals to bar nights, we do it all!</h3><br>
           </div>
-          <div class="blue">
+          <div class="blue" style="text-align: justify">
             {%if site.data.nmi.set%}
             <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
             {%else%}
