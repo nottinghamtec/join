@@ -64,43 +64,43 @@
             padding: 1rem;
             border: 2px solid #FFF;
         }
-        .speech-bubble { 
+        .speech-bubble {
             position: relative;
             background: rgb(52, 81, 166);
-            border-radius: .4em; 
+            border-radius: .4em;
         }
         .speech-bubble:after {
-            content: ''; 
-            position: absolute; 
-            left: 0; 
-            top: 50%; 
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
             width: 0;
-            height: 0; 
-            border: 20px solid transparent; 
-            border-right-color: rgb(52, 81, 166); 
+            height: 0;
+            border: 20px solid transparent;
+            border-right-color: rgb(52, 81, 166);
             border-left: 0;
             margin-top: -20px;
-            margin-left: -20px; 
+            margin-left: -20px;
         }
-        .speech-bubble-2 { 
-            position: relative; 
+        .speech-bubble-2 {
+            position: relative;
             background: rgb(52, 81, 166);
-            border-radius: .4em; 
-        } .speech-bubble-2:after { 
-            content: ''; 
+            border-radius: .4em;
+        } .speech-bubble-2:after {
+            content: '';
             position: absolute;
             right: 0;
-            top: 50%; 
+            top: 50%;
             width: 0;
             height: 0;
             border: 20px solid transparent;
             border-left-color: rgb(52, 81, 166);
             border-right: 0;
             margin-top: -20px;
-            margin-right: -20px; 
+            margin-right: -20px;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
@@ -119,11 +119,11 @@
 			<h2>Join <em>TEC PA & Lighting</em></h2>
             </div>
             <br>
-            <div style="display: grid; grid-template-columns: 30% 30%; justify-content: space-around; grid-gap: 1em;">
+            <div style="display: grid; grid-template-columns: 30% 30% auto; grid-gap: 1em;">
             <div style="display: flex; flex-direction: column; align-items: center">
             <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em">
-            <h3>Sam Windle, Technical Director</h3> 
-            </div>   
+            <h3>Sam Windle, Technical Director</h3>
+            </div>
             <div class="speech-bubble" style="align-self: center">
             <p><em>"TEC is entirely student run - by students, for students!"</em></p>
             </div>
@@ -136,16 +136,18 @@
             </div>
             <div style="display: flex; flex-direction: column; align-items: center">
             <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em">
-            <h3>Phoebe Jones, Members Officer</h3> 
-            </div>   
+            <h3>Phoebe Jones, Members Officer</h3>
+            </div>
             <div class="speech-bubble" style="align-self: center">
             <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
             </div>
-            </div>
+            <div style="grid-column: 3 / 3; grid-row: 1 / span 5; align-self:center">
             <p>We do events in the University of Nottingham Students Union and beyond. TEC provides extensive training from winch stands to balanced audio.</p><br><h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+            </div>
+            </div>
             <div class="blue" style="padding-top: 0;">
             <h2>New Members Introduction:</h2>
-            <p>TODO: Add some information about what a NMI actually is</p>            
+            <p>TODO: Add some information about what a NMI actually is</p>
             {%if site.data.nmi.set%}
             <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
             {%else%}
