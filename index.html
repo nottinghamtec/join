@@ -147,11 +147,13 @@
             </div>
             <div class="blue" style="padding-top: 0;">
             <h2>New Members Introduction:</h2>
-            <p>TODO: Add some information about what a NMI actually is</p>
+            {% capture my_include %}{% include_relative content/nmi.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+            <h3>When and where?</h3>
             {%if site.data.nmi.set%}
             <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
             {%else%}
-            <h3>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
+            <h4>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h4>
             {%endif%}
             </div>
             <h2>Formal training TEC can provide [sometimes]:</h2>
