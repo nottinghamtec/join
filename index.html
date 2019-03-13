@@ -104,67 +104,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-    <div class="container">
-        <div id="topbox" style="display: inline-flex; align-items: center; margin: 0.25em; margin-bottom: 0.5em;">
-            <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:250px;">
-            <h1 style="margin: 0.25rem; text-align: center; font-size:6em; align-self: flex-end", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
-        </div>
-		<div class="centre">
-            <div class="blue" style="top: 0; position: sticky; padding-top: 0;">
-			<h2>Join <em>TEC PA & Lighting</em></h2>
-            </div>
-            <br>
-            <div style="display: grid; grid-template-columns: 30% 30% auto; grid-gap: 1em;">
-            <div style="display: flex; flex-direction: column; align-items: center">
-            <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em">
-            <h3>Sam, Technical Director</h3>
-            </div>
-            <div class="speech-bubble" style="align-self: center">
-            <p><em>"TEC is entirely student run - by students, for students!"</em></p>
-            </div>
-            <div class="speech-bubble-2" style="align-self: center">
-            <p><em>"We're always on the lookout for keen new members!"</em></p>
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center">
-            <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em;">
-            <h3>Adam, Treasurer</h3>
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center">
-            <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em">
-            <h3>Phoebe, Members Officer</h3>
-            </div>
-            <div class="speech-bubble" style="align-self: center">
-            <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
-            </div>
-            <div style="grid-column: 3 / 3; grid-row: 1 / span 5; align-self:center">
-            <p>We do events in the University of Nottingham Students Union and beyond. TEC provides extensive training from winch stands to balanced audio.</p><br><h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
-            </div>
-            </div>
-            <div class="blue" style="padding-top: 0;">
-            <h2>New Members Introduction:</h2>
-            {% capture my_include %}{% include_relative content/nmi.md %}{% endcapture %}
-            {{ my_include | markdownify }}
-            <h3>When and where?</h3>
-            {%if site.data.nmi.set%}
-            <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
-            {%else%}
-            <h4>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h4>
-            {%endif%}
-            </div>
-            <h2>Formal training TEC can provide [sometimes]:</h2>
-            <ul>
-            <li>Trailer (B+E) Licence</li>
-            <li>Fire Awareness Training</li>
-            <li>First Aid Training</li>
-            </ul>
-            <h2>Beyond TEC:</h2>
-            <p>Many of our graduate members have jobs in the industry...when they're not hanging around in TEC!</p>
-            <ul>
-            <li>Rob Kettridge (date-date) now manages (wording?) <a src="https://www.collegest.org.uk/technical">College Street</a></li>
-            <li>David Taylor (2014-2018) now works for <a src="https://www.discourse.org/">Discourse</a>, the company that makes our forum software</li>
-            <li>Adam Robbins (date-date) now [insert stuff here]</li>
-            </ul>
-	    </div>
+  <div class="container">
+    <div id="topbox" style="display: inline-flex; align-items: center; margin: 0.25em; margin-bottom: 0.5em;">
+      <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:250px;">
+      <h1 style="margin: 0.25rem; text-align: center; font-size:6em; align-self: flex-end", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
     </div>
+    <div class="centre">
+      <div class="blue" style="top: 0; position: sticky; padding-top: 0;">
+        <h2>Join <em>TEC PA &amp; Lighting</em></h2>
+      </div>
+      <br>
+      <div style="display: grid; grid-template-columns: 30% 30% auto; grid-gap: 1em;">
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em">
+          <h3>Sam, Technical Director</h3>
+        </div>
+        <div class="speech-bubble" style="align-self: center">
+          <p><em>"TEC is entirely student run - by students, for students!"</em></p>
+        </div>
+        <div class="speech-bubble-2" style="align-self: center">
+          <p><em>"We're always on the lookout for keen new members!"</em></p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em;">
+          <h3>Adam, Treasurer</h3>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em">
+          <h3>Phoebe, Members Officer</h3>
+        </div>
+        <div class="speech-bubble" style="align-self: center">
+          <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
+        </div>
+        <div style="grid-column: 3 / 3; grid-row: 1 / span 5; align-self:center">
+          <p>We do events in the University of Nottingham Students Union and beyond. TEC provides extensive training from winch stands to balanced audio.</p><br><h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+        </div>
+        <div class="blue" style="padding-top: 0;">
+          <h2>New Members Introduction:</h2>
+          <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
+          {%else%}
+          <h4>We don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h4>
+          {%endif%}
+          {% capture my_include %}{% include_relative content/nmi.md %}{% endcapture %}
+          {{ my_include | markdownify }}
+          {%if site.data.nmi.set%}
+        </div>
+      </div>
+      <h2>Formal training TEC can provide [sometimes]:</h2>
+      <ul>
+        <li>Trailer (B+E) Licence</li>
+        <li>Fire Awareness Training</li>
+        <li>First Aid Training</li>
+      </ul>
+      <h2>Beyond TEC:</h2>
+      <p>Many of our graduate members have jobs in the industry...when they're not hanging around in TEC!</p>
+      <ul>
+        <li>Rob Kettridge (date-date) now manages (wording?) <a src="https://www.collegest.org.uk/technical">College Street</a></li>
+        <li>David Taylor (2014-2018) now works for <a src="https://www.discourse.org/">Discourse</a>, the company that makes our forum software</li>
+        <li>Adam Robbins (date-date) now [insert stuff here]</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
