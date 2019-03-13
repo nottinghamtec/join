@@ -1,4 +1,4 @@
-We do events in the University of Nottingham Students Union and beyond. 
+We do sound, lighting and lots more in the University of Nottingham Students Union and beyond. 
 We support a wide variety of events which run throughout the academic year, ranging from a small open mic night to multi venue events such as Graduation Ball.
 TEC provides extensive training from winch stands to balanced audio.
 

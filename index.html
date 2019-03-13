@@ -18,10 +18,8 @@
     margin-bottom: 0.25rem;
   }
   h1 {
-    font-family: 'Special Elite', cursive;
-    font-weight: 600;
-    font-size: 2.5rem;
-    margin-bottom: 0.25rem;
+    font-family: 'Carter One', cursive;
+    font-size: 2.5em;
   }
   body {
     background-color: #111;
@@ -100,15 +98,15 @@
       margin-right: -20px;
   }
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   </head>
   <body>
     <div class="container">
       <div class="centre">
         <div style="display: grid; grid-template-columns: 1r 1r 1r; grid-gap: 0.5em">
-          <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:250px; grid-column: 1 / 2; justify-self: center;">
-          <h1 style="margin: 0.25rem; text-align: center; font-size:6em; grid-column: 2 / 4; align-self: center", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
+          <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em; grid-column: 1 / 2; align-self: center; justify-self: center;">
+          <h1 style="margin: 0.25rem; font-size: 3em; grid-column: 2 / 4; align-self: center", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
           <div class="blue" style="grid-column: 1 / 4">
             <h2>Join TEC PA &amp; Lighting!</h2>
           </div>
@@ -118,10 +116,7 @@
           <div class="blue"> 
             <h2>New Members' Introduction:</h2>
           </div>
-          <div class="blue"> 
-            <h2>Our Members Say:</h2>
-          </div>
-          <div>
+          <div style="grid-column: 1 / 2">
             <div style="text-align: justify;">
             {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
             {{ my_include | markdownify }}
@@ -140,11 +135,11 @@
             {{ my_include2 | markdownify }}
             </div>
           </div>
-          <div>
+          <div style="grid-column: 3/4; grid-row: 3 / 6">
               <div style="display: flex; flex-flow: row nowrap;">
                 <div style="display: flex; flex-direction: column; align-items: center">
                   <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em; border-radius: 0.1em">
-                  <h3>Sam, Technical Director</h3>
+                  <h3>Sam</h3>
                 </div>
                 <div class="speech-bubble" style="align-self: center">
                   <p><em>"TEC is entirely student run - by students, for students!"</em></p>
@@ -153,7 +148,7 @@
               <div style="display: flex; flex-flow: row-reverse nowrap;">
                 <div style="display: flex; flex-direction: column; align-items: center">
                   <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em; border-radius: 0.1em">
-                  <h3>Adam, Treasurer</h3>
+                  <h3>Adam</h3>
                 </div>
                 <div class="speech-bubble-2" style="align-self: center">
                   <p><em>"We're always on the lookout for keen new members!"</em></p>
@@ -162,7 +157,7 @@
               <div style="display: flex; flex-flow: row nowrap;">
                 <div style="display: flex; flex-direction: column; align-items: center">
                   <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em; border-radius: 0.1em">
-                  <h3>Phoebe, Members Officer</h3>
+                  <h3>Phoebe</h3>
                 </div>
                 <div class="speech-bubble" style="align-self: center">
                   <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
