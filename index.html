@@ -63,6 +63,7 @@
     border-radius: 5px;
     padding: 1rem;
     border: 2px solid #FFF;
+    padding-top: 0; 
   }
   .speech-bubble {
     position: relative;
@@ -111,18 +112,17 @@
         <h1 style="margin: 0.25rem; text-align: center; font-size:6em; align-self: flex-end", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
       </div>
       <div class="centre">
-        <div class="blue" style="top: 0; position: sticky; padding-top: 0;">
-          <h2>Join <em>TEC PA &amp; Lighting</em></h2>
-        </div>
-        <br>
         <div style="display: grid; grid-template-columns: auto 50% auto; grid-gap: 1em;">
+          <div class="blue" style="grid-column: 1 / 4">
+            <h2>Join <em>TEC PA &amp; Lighting</em></h2>
+          </div>
           <div>
             {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
             {{ my_include | markdownify }}
             <br>
             <h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
           </div>
-          <div class="blue" style="padding-top: 0;">
+          <div class="blue">
             <h2>New Members Introduction:</h2>
             {%if site.data.nmi.set%}
             <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
