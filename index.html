@@ -64,6 +64,41 @@
             padding: 1rem;
             border: 2px solid #FFF;
         }
+        .speech-bubble { 
+            position: relative;
+            background: rgb(52, 81, 166);
+            border-radius: .4em; 
+        }
+        .speech-bubble:after {
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            top: 50%; 
+            width: 0;
+            height: 0; 
+            border: 20px solid transparent; 
+            border-right-color: rgb(52, 81, 166); 
+            border-left: 0;
+            margin-top: -20px;
+            margin-left: -20px; 
+        }
+        .speech-bubble-2 { 
+            position: relative; 
+            background: rgb(52, 81, 166);
+            border-radius: .4em; 
+        } .speech-bubble-2:after { 
+            content: ''; 
+            position: absolute;
+            right: 0;
+            top: 50%; 
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-left-color: rgb(52, 81, 166);
+            border-right: 0;
+            margin-top: -20px;
+            margin-right: -20px; 
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -71,21 +106,43 @@
 <body>
     <div class="container">
         <div style="margin: 0.25rem; padding-bottom: 0.25rem" id="topbox">
-            <img src="static/images/tec_logo_white.png" id="mainlogo">
-    		<h1 style="margin: 0.25rem; text-align: center; font-size:6rem;", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
+            <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:250px; float: left">
+            <h1 style="margin: 0.25rem; text-align: center; font-size:6em;", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
         </div>
+        <!---temporary fudge!--->
+        <br>
+        <br>
+        <br>
+        <br>
 		<div class="centre">
             <div class="blue" style="top: 0; position: sticky;">
 			<h2>Join <em>TEC PA & Lighting</em></h2>
             </div>
-            <div>
-            <div style="display: flex;">
-            <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg">
-            <h3>Sam Windle, Technical Director</h3>
-            <p><em>"TEC is entirely volunteer student run - by students, for students."</em></p>
-            <div>
+            <br>
+            <div style="display: grid; grid-template-columns: 30% 30%; justify-content: space-around; grid-gap: 1em;">
+            <div style="display: flex; flex-direction: column; align-items: center">
+            <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em">
+            <h3>Sam Windle, Technical Director</h3> 
+            </div>   
+            <div class="speech-bubble" style="align-self: center">
+            <p><em>"TEC is entirely student run - by students, for students!"</em></p>
             </div>
-             We're always on the lookout for keen new members! Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn. TEC provides extensive training from winch stands to balanced audio.<br>We do events in the University of Nottingham Students Union and beyond. From festivals to bar nights, we do it all.<br>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
+            <div class="speech-bubble-2" style="align-self: center">
+            <p><em>"We're always on the lookout for keen new members!"</em></p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center">
+            <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em;">
+            <h3>Adam Clark, Treasurer</h3>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center">
+            <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em">
+            <h3>Phoebe Jones, Members Officer</h3> 
+            </div>   
+            <div class="speech-bubble" style="align-self: center">
+            <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
+            </div>
+            </div>
+            <p>We do events in the University of Nottingham Students Union and beyond. TEC provides extensive training from winch stands to balanced audio.</p><br><h3>From festivals to bar nights, we do it all!</h3><br><p>If you're intrested in getting involved, come along to our next New Members Introduction!</p>
             <div class="blue" style="padding-top: 0;">
             <h2>New Members Introduction:</h2>
             <p>TODO: Add some information about what a NMI actually is</p>            
