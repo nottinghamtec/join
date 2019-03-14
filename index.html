@@ -98,6 +98,7 @@
   }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Righteous|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   </head>
   <body>
@@ -168,9 +169,8 @@
           </div>
           <div class="blue" style="grid-column: 1 / 4">
             <h2>Contact Us:</h2>
-            <h3>Email: <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a></h3>
-            <h3>Phone: 0115 846 8720
-            <h3>Facebook: <a href="https://facebook.com/nottinghamtec">nottinghamtec</a></h3>
+            {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
+            {{ my_include3 | markdownify }}
           </div>
       <!---End Grid--->
       </div>
