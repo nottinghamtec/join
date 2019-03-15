@@ -105,11 +105,13 @@
   <body>
     <div class="container">
       <div class="centre">
-        <div style="display: grid; grid-template-columns: 1r 1r 1r; grid-gap: 0.5em">
-          <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em; grid-column: 1 / 2; align-self: center; justify-self: center;">
-          <h1 style="margin: 0.25rem; font-size: 3.75em; grid-column: 2 / 4; align-self: center; text-align: left;", class="animated zoomInDown">GET INVOLVED IN SOMETHING UNIQUE!</h1>
-          <div class="blue" style="grid-column: 1 / 4; background-image: url('static/images/header_bg.jpg');">
-            <h2>Join TEC PA &amp; Lighting!</h2>
+        <div style="display: grid; grid-template-columns: 1r 1r 1r; grid-gap: 0.5em; grid-auto-flow: dense">
+          <div style="grid-column: 1 / 4; background-image: url('static/images/header_bg.jpg');">
+            <div style="display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-around; ">
+              <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em;">
+              <h1 style="margin: 0.25rem; font-size: 3.75em; text-align: left;", class="animated zoomInDown"><em>GET INVOLVED IN SOMETHING UNIQUE!</em></h1>
+            </div>
+            <h1>Join TEC PA &amp; Lighting!</h1>
           </div>
           <div class="blue">
             <h2>About Us:</h2>
@@ -120,13 +122,18 @@
           <div class="blue">
             <h2>Our Members Say:</h2>
           </div>
-          <div style="grid-column: 1 / 2">
+          <div style="grid-column: 1 / 2;">
             <div style="text-align: justify;">
             {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
             {{ my_include | markdownify }}
             </div>
             <h3>From festivals to bar nights, we do it all!</h3><br>
-          </div>
+            <div class="blue"> 
+                <h2>Contact Us:</h2>
+                {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
+                {{ my_include3 | markdownify }}
+            </div>
+          </div>          
           <div class="blue">
             <h3>Next session:</h3>
             {%if site.data.nmi.set%}
@@ -167,11 +174,6 @@
                   <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
                 </div>
               </div>
-          </div>
-          <div class="blue" style="grid-column: 1 / 4">
-            <h2>Contact Us:</h2>
-            {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
-            {{ my_include3 | markdownify }}
           </div>
       <!---End Grid--->
       </div>
