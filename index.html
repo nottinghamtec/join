@@ -97,6 +97,12 @@
       margin-top: -20px;
       margin-right: -20px;
   }
+  .fa-user {
+    color: #fff;
+  }
+  .fa-globe {
+    color: #fff;
+  }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Righteous|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -129,11 +135,12 @@
             </div>
             <h3>From festivals to bar nights, we do it all!</h3><br>
             <div class="blue"> 
-                <h2>Contact Us:</h2>
+                <h2>Contactd:</h2>
                 {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
                 {{ my_include3 | markdownify }}
             </div>
-          </div>          
+            <h4><i class="fas fa-user"></i> <a href="http://members.nottinghamtec.co.uk">Members' Login</a> <i class="fas fa-globe"> </i> <a href="https://nottinghamtec.co.uk">Main Website</a></h4>
+          </div>       
           <div class="blue">
             <h3>Next session:</h3>
             {%if site.data.nmi.set%}
