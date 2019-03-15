@@ -103,6 +103,17 @@
   .fa-globe {
     color: #fff;
   }
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+  }
+  @media only screen and (max-width: 700px) {
+    .parent {
+        display: block;
+    }
+  }
+  }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Righteous|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -111,10 +122,10 @@
   <body>
     <div class="container">
       <div class="centre">
-        <div style="display: grid; grid-template-columns: 1r 1r 1r; grid-gap: 0.5em; grid-auto-flow: dense">
+        <div class="parent">
           <div style="grid-column: 1 / 4; background-image: url('static/images/header_bg.jpg');">
             <div style="display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-around; ">
-              <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em;">
+              <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em; padding: 1em">
               <h1 style="margin: 0.25rem; font-size: 3.75em; text-align: left;", class="animated zoomInDown"><em>GET INVOLVED IN SOMETHING UNIQUE!</em></h1>
             </div>
             <h1>Join TEC PA &amp; Lighting!</h1>
@@ -122,24 +133,21 @@
           <div class="blue">
             <h2>About Us:</h2>
           </div>
-          <div class="blue">
-            <h2>New Members' Introduction:</h2>
-          </div>
-          <div class="blue">
-            <h2>Our Members Say:</h2>
-          </div>
-          <div style="grid-column: 1 / 2;">
+          <div style="grid-column: 1 / 2; grid-column: 1/2">
             <div style="text-align: justify;">
             {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
             {{ my_include | markdownify }}
             </div>
             <h3>From festivals to bar nights, we do it all!</h3><br>
             <div class="blue"> 
-                <h2>Contactd:</h2>
+                <h2>Contact:</h2>
                 {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
                 {{ my_include3 | markdownify }}
             </div>
             <h4><i class="fas fa-user"></i> <a href="http://members.nottinghamtec.co.uk">Members' Login</a> <i class="fas fa-globe"> </i> <a href="https://nottinghamtec.co.uk">Main Website</a></h4>
+          </div>
+          <div class="blue" style="grid-row:  2/3; grid-column: 2/3">
+            <h2>New Members' Introduction:</h2>
           </div>       
           <div class="blue">
             <h3>Next session:</h3>
@@ -152,6 +160,9 @@
             {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
             {{ my_include2 | markdownify }}
             </div>
+          </div>
+          <div class="blue" style="grid-row:  2/3; grid-column: 3/4">
+            <h2>Our Members Say:</h2>
           </div>
           <div>
               <div style="display: flex; flex-flow: row nowrap;">
