@@ -1,200 +1,109 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Join TEC!</title>
-  <meta charset="UTF-8">
-  <meta name="author" content="Arona Jones">
-  <meta name="description" content="How to join TEC PA & Lighting and loads of reasons you should!">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <style>
-  h1, h2, h3, p, a, li {
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-  }
-  h2, h3 {
-    font-weight: 200;
-    margin-bottom: 0.25rem;
-  }
-  h1 {
-    font-family: "Righteous", sans-serif;
-  }
-  body {
-    background-color: #111;
-    background-image: url("static/images/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100%;
-  }
-  .container {
-    margin: 2rem 4rem;
-    padding: 1rem;
-    background-color: #000;
-    background-color: rgba(24,24,24,0.8);
-  }
-  .tighttop {
-    margin-top: 0;
-  }
-  .tightbottom {
-    margin-bottom: 0;
-  }
-  ul {
-    margin-top: 0.25rem;
-  }
-  .centre {
-    text-align: center;
-    margin: 0 auto;
-  }
-  img {
-    margin-right: 0.25rem;
-  }
-  @media only screen and (max-width: 768px) {
-    .container {
-      margin: 1rem 0;
-      padding: 0.5rem;
-    }
-  }
-  .blue {
-    background-color: rgba(52, 81, 166, 0.5);
-    padding: 1rem;
-    padding-top: 0;
-  }
-  .speech-bubble {
-    position: relative;
-    background: rgba(52, 81, 166, 0.7);
-    border-radius: .4em;
-    padding: .4em;
-  }
-  .speech-bubble:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-right-color: rgba(52, 81, 166, 0.7);
-    border-left: 0;
-    margin-top: -20px;
-    margin-left: -20px;
-  }
-  .speech-bubble-2 {
-    position: relative;
-    background: rgba(52, 81, 166, 0.7);
-    border-radius: .4em;
-  }
-  .speech-bubble-2:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      width: 0;
-      height: 0;
-      border: 20px solid transparent;
-      border-left-color: rgba(52, 81, 166, 0.7);
-      border-right: 0;
-      margin-top: -20px;
-      margin-right: -20px;
-  }
-  .fa-user {
-    color: #fff;
-  }
-  .fa-globe {
-    color: #fff;
-  }
-  .parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5em;
-  }
-  @media only screen and (max-width: 700px) {
-    .parent {
-        display: block;
-    }
-  }
-  }
-    </style>
+    <title>Join TEC!</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arona Jones">
+    <meta name="description" content="How to join TEC PA & Lighting and loads of reasons you should!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    {% include favicons.html %}
+
+    {% include style.html %}
+
     <link href="https://fonts.googleapis.com/css?family=Righteous|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="centre">
+</head>
+<body>
+<div class="container">
+    <div class="centre">
         <div class="parent">
-          <div style="grid-column: 1 / 4; background-image: url('static/images/header_bg.jpg');">
-            <div style="display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-around; ">
-              <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em; padding: 1em">
-              <h1 style="margin: 0.25rem; font-size: 3.75em; text-align: left;", class="animated zoomInDown"><em>GET INVOLVED IN SOMETHING UNIQUE!</em></h1>
+            <div style="grid-column: 1 / 4; background-image: url('static/images/header_bg.jpg');">
+                <div style="display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-around; ">
+                    <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:10em; padding: 1em"
+                         alt="TEC Logo">
+                    <h1 style="margin: 0.25rem; font-size: 3.75em; text-align: left;" , class="animated zoomInDown"><em>GET
+                        INVOLVED IN SOMETHING UNIQUE!</em></h1>
+                </div>
+                <h1>Join TEC PA &amp; Lighting!</h1>
             </div>
-            <h1>Join TEC PA &amp; Lighting!</h1>
-          </div>
-          <div class="blue">
-            <h2>About Us:</h2>
-          </div>
-          <div style="grid-column: 1 / 2; grid-column: 1/2">
-            <div style="text-align: justify;">
-            {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
-            {{ my_include | markdownify }}
+            <div class="blue">
+                <h2>About Us:</h2>
             </div>
-            <h3>From festivals to bar nights, we do it all!</h3><br>
-            <div class="blue"> 
-                <h2>Contact:</h2>
-                {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
-                {{ my_include3 | markdownify }}
+            <div style="grid-column: 1 / 2; grid-column: 1/2">
+                <div style="text-align: justify;">
+                    {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
+                    {{ my_include | markdownify }}
+                </div>
+                <h3>From festivals to bar nights, we do it all!</h3><br>
+                <div class="blue">
+                    <h2>Contact:</h2>
+                    {% capture my_include3 %}{% include_relative content/contact.md %}{% endcapture %}
+                    {{ my_include3 | markdownify }}
+                </div>
+                <h4><i class="fas fa-user"></i> <a href="https://members.nottinghamtec.co.uk">Members' Login</a>
+                    <i class="fas fa-globe"> </i> <a href="https://nottinghamtec.co.uk">Main Website</a></h4>
             </div>
-            <h4><i class="fas fa-user"></i> <a href="http://members.nottinghamtec.co.uk">Members' Login</a> <i class="fas fa-globe"> </i> <a href="https://nottinghamtec.co.uk">Main Website</a></h4>
-          </div>
-          <div class="blue" style="grid-row:  2/3; grid-column: 2/3">
-            <h2>New Members' Introduction:</h2>
-          </div>       
-          <div class="blue">
-            <h3>Next session:</h3>
-            {%if site.data.nmi.set%}
-            <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
-            {%else%}
-            <h3>Sorry - we don't have a New Members Introduction coming up right now - email <a src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
-            {%endif%}
-            <div style="text-align: justify">
-            {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
-            {{ my_include2 | markdownify }}
+            <div class="blue" style="grid-row:  2/3; grid-column: 2/3">
+                <h2>New Members' Introduction:</h2>
             </div>
-          </div>
-          <div class="blue" style="grid-row:  2/3; grid-column: 3/4">
-            <h2>Our Members Say:</h2>
-          </div>
-          <div>
-              <div style="display: flex; flex-flow: row nowrap;">
-                <div style="display: flex; flex-direction: column; align-items: center">
-                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:10em; border-radius: 0.1em">
-                  <h3>Sam</h3>
+            <div class="blue">
+                <h3>Next session:</h3>
+                {%if site.data.nmi.set%}
+                <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
+                {%else%}
+                <h3>Sorry - we don't have a New Members Introduction coming up right now - email <a
+                        src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one
+                    up for you!</h3>
+                {%endif%}
+                <div style="text-align: justify">
+                    {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
+                    {{ my_include2 | markdownify }}
                 </div>
-                <div class="speech-bubble" style="align-self: center">
-                  <p><em>"TEC is entirely student run - by students, for students!"</em></p>
+            </div>
+            <div class="blue" style="grid-row:  2/3; grid-column: 3/4">
+                <h2>Our Members Say:</h2>
+            </div>
+            <div>
+                <div style="display: flex; flex-flow: row nowrap;">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg"
+                             style="width:10em; border-radius: 0.1em" alt="Sam's Picture">
+                        <h3>Sam</h3>
+                    </div>
+                    <div class="speech-bubble" style="align-self: center">
+                        <p><em>"TEC is entirely student run - by students, for students!"</em></p>
+                    </div>
                 </div>
-              </div>
-              <div style="display: flex; flex-flow: row-reverse nowrap;">
-                <div style="display: flex; flex-direction: column; align-items: center">
-                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:10em; border-radius: 0.1em">
-                  <h3>Adam</h3>
+                <div style="display: flex; flex-flow: row-reverse nowrap;">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg"
+                             style="width:10em; border-radius: 0.1em" alt="Adam's Picture">
+                        <h3>Adam</h3>
+                    </div>
+                    <div class="speech-bubble-2" style="align-self: center">
+                        <p><em>"We're always on the lookout for keen new members!"</em></p>
+                    </div>
                 </div>
-                <div class="speech-bubble-2" style="align-self: center">
-                  <p><em>"We're always on the lookout for keen new members!"</em></p>
+                <div style="display: flex; flex-flow: row nowrap;">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg"
+                             style="width:10em; border-radius: 0.1em" alt="Phoebe's Picture">
+                        <h3>Phoebe</h3>
+                    </div>
+                    <div class="speech-bubble" style="align-self: center">
+                        <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a
+                            willingness to learn."</em></p>
+                    </div>
                 </div>
-              </div>
-              <div style="display: flex; flex-flow: row nowrap;">
-                <div style="display: flex; flex-direction: column; align-items: center">
-                  <img src="https://www.nottinghamtec.co.uk/imgs/committee/phoebe.jpg" style="width:10em; border-radius: 0.1em">
-                  <h3>Phoebe</h3>
-                </div>
-                <div class="speech-bubble" style="align-self: center">
-                  <p><em>"Whether you've got loads of experience or none at all get in touch - all you need is a willingness to learn."</em></p>
-                </div>
-              </div>
-          </div>
-      <!---End Grid--->
-      </div>
+            </div>
+            <!---End Grid--->
+        </div>
     </div>
-  </body>
-  </html>
+</div>
+</body>
+</html>
