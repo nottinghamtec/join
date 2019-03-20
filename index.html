@@ -52,14 +52,6 @@
                 <h2>New Members' Introduction:</h2>
             </div>
             <div class="blue">
-                <h3>Next session:</h3>
-                {%if site.data.nmi.set%}
-                <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
-                {%else%}
-                <h3>Sorry - we don't have a New Members Introduction coming up right now - email <a
-                        src="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one
-                    up for you!</h3>
-                {%endif%}
                 <div style="text-align: justify">
                     {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
                     {{ my_include2 | markdownify }}
