@@ -11,6 +11,9 @@
 
     h1 {
         font-family: "Righteous", sans-serif;
+        margin: 0.25rem; 
+        font-size: 3.75em;
+        text-align: left;
     }
 
     body {
@@ -47,13 +50,6 @@
 
     img {
         margin-right: 0.25rem;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .container {
-            margin: 1rem 0;
-            padding: 0.5rem;
-        }
     }
 
     .blue {
@@ -117,9 +113,34 @@
         grid-gap: 0.5em;
     }
 
-    @media only screen and (max-width: 700px) {
+    #topflex {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media only screen and (max-width: 768px) {
         .parent {
             display: block;
+        }
+
+        .container {
+            margin: 1rem 0;
+            padding: 0.5rem;
+        }
+
+        #mainlogo {
+            width: 1em;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #topflex {
+            flex-flow: column wrap;
         }
     }
 
