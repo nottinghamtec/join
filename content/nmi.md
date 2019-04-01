@@ -11,8 +11,9 @@ Our sessions cover:
 * Manual handling training
 * Basic health and safety training
 * And introducing the TEC members website
-
-<div class="blue" style="background-color: rgba(0, 0, 0, 0.5); text-align: center; margin: -1em; padding-top: 0.2em;">
+<br>
+<br>
+<div class="blue" style="background-color: rgba(0, 0, 0, 0.5); text-align: center; margin: -1em; padding-top: 0.1em;">
 <h2>Next session:</h2>
 {%if site.data.nmi.set%}
 <h2>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h2>
