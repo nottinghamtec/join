@@ -1,10 +1,3 @@
-<div style="background-image: url('static/images/flash.jpg'); padding: 1em">
-<h3>From festivals to bar nights, we do it all!</h3>
-
-<p>We do sound, lighting and lots more, in and beyond the University of Nottingham Students Union. 
-We support a wide variety of events which run throughout the academic year, ranging from a small open mic night to multi venue events such as Graduation Ball.</p>
-</div>
-
 ### TEC provides extensive training ###
 
 <img src="static/images/van.jpg" alt="Van Logo" width="200em" style="float: left">

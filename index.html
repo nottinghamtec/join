@@ -31,13 +31,21 @@
                 </div>
                 <h2>Join TEC PA &amp; Lighting!</h2>
             </div>
-            <div class="blue">
-                <h2>About Us:</h2>
+            <!---I'm so so sorry, future maintainers. Basically, what happens is that on mobile the layout is set to block, whereas on desktop it is grid. Therefore the content is laid out in the HTML in the order it is meant to appear on 
+                 mobile,  then on desktop it is rearranged by the grid into a totally different order. Have fun! --->
+            <div style="background-image: url('static/images/flash.jpg'); padding: 1em; grid-column: 1/2; grid-row: 3/4">
+                <h3>From festivals to bar nights, we do it all!</h3>
+
+                <p>We do sound, lighting and lots more, in and beyond the University of Nottingham Students Union. 
+                We support a wide variety of events which run throughout the academic year, ranging from a small open mic night to multi venue events such as Graduation Ball.</p>
             </div>
-            <div style="grid-column: 1 / 2; grid-column: 1/2">
-                <div style="text-align: center;">
-                    {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
-                    {{ my_include | markdownify }}
+            <div class="blue" style="grid-row:  2/3; grid-column: 2/3">
+                <h2>New Members' Introduction:</h2>
+            </div>
+            <div class="blue" style="grid-column: 2/3; grid-row: 3/5">
+                <div style="text-align: justify">
+                    {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
+                    {{ my_include2 | markdownify }}
                 </div>
                 <br>
                 <div class="blue">
@@ -50,19 +58,19 @@
                     <i class="fas fa-globe"> </i> <a href="https://nottinghamtec.co.uk">Main Website</a>
                 </h4>
             </div>
-            <div class="blue" style="grid-row:  2/3; grid-column: 2/3">
-                <h2>New Members' Introduction:</h2>
+            <div class="blue" style="grid-column: 1 / 2; grid-row: 2/3">
+                <h2>About Us:</h2>
             </div>
-            <div class="blue">
-                <div style="text-align: justify">
-                    {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
-                    {{ my_include2 | markdownify }}
+            <div style="grid-column: 1 / 2; grid-row: 4/5">
+                <div style="text-align: center;">
+                    {% capture my_include %}{% include_relative content/intro.md %}{% endcapture %}
+                    {{ my_include | markdownify }}
                 </div>
             </div>
             <div class="blue" style="grid-row:  2/3; grid-column: 3/4">
                 <h2>Our Members Say:</h2>
             </div>
-            <div>
+            <div style="grid-row: 3/5">
                 <div style="display: flex; flex-flow: row nowrap;">
                     <div style="display: flex; flex-direction: column; align-items: center">
                         <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg"
