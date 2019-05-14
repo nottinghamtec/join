@@ -37,15 +37,15 @@
                 <h2>New Members' Introduction:</h2>
             </div>
             <div class="blue" style="grid-column: 1/2;">
-                <div style="display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.5); text-align: center; margin: -1em; padding: 1em" id="sessionheader">
-                <h3 style="flex-shrink: 0">Next session:</h3>
+                <div style="display: flex; align-items: center; background-color: rgba(30, 30, 30, 0.95); padding: 1em; margin-left: -1em; margin-right: -1em; padding-top: 0;" id="sessionheader">
+                <h3 style="flex-shrink: 0; margin-right: 0.5em">Next session:</h3>
                 {%if site.data.nmi.set%}
-                <h3 style="margin-left: 0.5em">{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h3>
+                <h3>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h3>
                 {%else%}
                 <h3>We don't have a New Members Introduction coming up right now - email <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
                 {%endif%}
                 </div>
-                <div style="text-align: justify">
+                <div style="text-align: justify;">
                     {% capture my_include2 %}{% include_relative content/nmi.md %}{% endcapture %}
                     {{ my_include2 | markdownify }}
                 </div>
