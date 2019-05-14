@@ -88,11 +88,15 @@ img {
         text-align: center;
     }
 
+    .no-mobile {
+        display: none;
+    }
+
     #topflex {
         flex-flow: column wrap;
     }
 
-    .no-mobile {
-        display: none;
+    #sessionheader {
+        flex-flow: column wrap !important;
     }
 }
