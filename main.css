@@ -57,47 +57,6 @@ img {
     padding-top: 0;
 }
 
-.speech-bubble {
-    position: relative;
-    background: rgba(52, 81, 166, 0.7);
-    border-radius: .4em;
-    padding: .4em;
-}
-
-.speech-bubble:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-right-color: rgba(52, 81, 166, 0.7);
-    border-left: 0;
-    margin-top: -20px;
-    margin-left: -20px;
-}
-
-.speech-bubble-2 {
-    position: relative;
-    background: rgba(52, 81, 166, 0.7);
-    border-radius: .4em;
-}
-
-.speech-bubble-2:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-left-color: rgba(52, 81, 166, 0.7);
-    border-right: 0;
-    margin-top: -20px;
-    margin-right: -20px;
-}
-
 .fa-user {
     color: #fff;
 }
@@ -108,8 +67,8 @@ img {
 
 .parent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75em;
 }
 
 #topflex {
