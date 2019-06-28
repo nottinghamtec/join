@@ -73,6 +73,12 @@ img {
     justify-content: flex-start;
 }
 
+#contact {
+    display: flex; 
+    flex-wrap: nowrap; 
+    align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
     .parent {
         display: block;
@@ -98,5 +104,9 @@ img {
 
     #sessionheader {
         flex-flow: column wrap !important;
+    }
+
+    #contact {
+        flex-wrap: wrap;
     }
 }
