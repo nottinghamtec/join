@@ -13,10 +13,9 @@
 
     <link rel="stylesheet" href="main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light+Two" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
 <div class="container">
@@ -24,7 +23,7 @@
             <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:7em; padding: 0.5em; padding-right: 1em;" alt="TEC Logo, 'TEC' in serif with 'PA and Lighting' in a blue box surrounded by rings"></span>
             <div>                
                 <h1>Get Involved in Something Unique!</h1>
-                <h2 class="animated flash" style="margin-top: 0.2em;">TEC has something for everyone</h2>
+                <h2 style="margin-top: 0.2em;"><em>By students, for students</em></h2>
             </div>
         </div>
         <div class="parent">
@@ -32,18 +31,18 @@
             <div class="blue" style="grid-column: 1/3; grid-row: 1/2">
             <div style="text-align: left">
                     <div id="contact">
-                        <h2 style="margin-right: 1em"><a href="mailto:info@nottinghamtec.co.uk"><i class="fas fa-envelope"></i></a></h2>
-                        <h2 style="margin-right: 1em"><a href="https://facebook.com/nottinghamtec"><i class="fab fa-facebook"></i></a></h2>
-                        <h2 style="margin-right: 1em"><a href="https://twitter.com/nottinghamtec"><i class="fab fa-twitter"></i></a></h2>
-                        <h2 style="margin-right: 1em"><a href="https://instagram.com/nottinghamtec"><i class="fab fa-instagram"></i></a></h2>
-                        <h2 style="margin-right: 1em"><i class="fas fa-phone"></i> 0115 846 8720</h2><div class="spacer"></div>
-                        <h2 style="margin-right: 1em"><i class="fas fa-mobile"></i> 07825 065681</h2>
+                        <h2 id="contact-element" style="margin-right: 1em"><a href="mailto:info@nottinghamtec.co.uk"><i class="fas fa-envelope"></i></a></h2>
+                        <h2 id="contact-element" style="margin-right: 1em"><a href="https://facebook.com/nottinghamtec"><i class="fab fa-facebook"></i></a></h2>
+                        <h2 id="contact-element" style="margin-right: 1em"><a href="https://twitter.com/nottinghamtec"><i class="fab fa-twitter"></i></a></h2>
+                        <h2 id="contact-element" style="margin-right: 1em"><a href="https://instagram.com/nottinghamtec"><i class="fab fa-instagram"></i></a></h2>
+                        <h2 id="contact-element" style="margin-right: 1em"><a href="tel:01158468720"><i class="fas fa-phone"></i><span class="no-mobile"> 0115 846 8720</span></h2><div class="spacer no-mobile"></a></div>
+                        <h2 id="contact-element" style="margin-right: 1em"><a href="tel:+447825065681"><i class="fas fa-mobile"></i><span class="no-mobile"> 07825 065681</span></a></h2>
                     </div>
                 </div>
             </div>
             <div style="background-image: url('static/images/flash.jpg'); padding: 1em; grid-column: 1/2; grid-row: 2/3">
                 <h3>From bar nights to Grad Ball, we do it all! </h3>
-                <p>We provide sound, lighting and much more for events in and outside of the University of Nottingham Students’ Union. <br>As well as new events, we have a number of annual events which include Holi on the Downs, Sports and Societies Ball, and Graduation Ball.</p>
+                <p>We provide sound, lighting and much more for events in and outside of the University of Nottingham Students’ Union. <br>As well as new events, we have a number of annual events which include Holi on the Downs, Sports and Societies Balls, and Graduation Ball.</p>
             </div>
             <div class="blue" style="grid-column: 1/2">
                 <h2>New Members' Introduction</h2>
@@ -58,10 +57,8 @@
                 {%endif%}
                 </div>
                 <div style="text-align: justify;">
-                    <p>Are you intrested in the technical side of events? Why not come along to one of our New Members’ Introduction sessions, where we will go through some of our huge range of kit and how to use it.
-No experience is required - all knowledge levels are welcome.<br>
-We will provide you with the training required to be part of our team, so come along and see what it’s all about. TEC is all about getting stuck in! 
-Once you’ve attended a New Members’ Introduction, you can come along to any TEC event. Coming along doesn't mean you're committing to TEC - why not come and try it out? We'd love to have you as part of the team.</p>
+                    <p>Are you intrested in the technical side of events? Why not come along to one of our New Members’ Introduction sessions, where we will go through some of our huge range of kit and how to use it. No experience is required - all knowledge levels are welcome. We will provide you with the training required to be part of our team, so come along and see what it’s all about. TEC is all about getting stuck in!</p>
+                    <p>Once you’ve attended a New Members’ Introduction, you can come along to any TEC event. Coming along doesn't mean you're committing to TEC - why not come and try it out? We'd love to have you as part of the team.</p>
                 </div>
                 <br>
                 <h4 class="no-mobile" style="text-align: right">
@@ -75,8 +72,8 @@ Once you’ve attended a New Members’ Introduction, you can come along to any 
             <div style="grid-column: 2/3; grid-row: 3/5">
                 <div style="text-align: center;">
                     <h3>TEC provides extensive training</h3>
-                    <img src="static/images/van.jpg" alt="Van Logo" width="200em" style="float: left">
-                    <p>There is training on everything, from setting up a small event to balanced audio or lighting design. As well as our in house training, you can learn to drive our van and trailer, as well as attend First Aid and Fire Safety training provided by the Students’ Union.</p>
+                    <img src="static/images/van.jpg" alt="Van Logo" width="200em" style="float: left" class="no-mobile">
+                    <p>On everything from setting up a small event to balanced audio or lighting design. As well as our in-house training, you can learn to drive our van and trailer, as well as attend First Aid and Fire Safety training provided by the Students’ Union.</p>
                     <h3>Don't think we're only about hard work!</h3>
                     <img src="static/images/social.jpg" alt="TEC Member on High Ropes" width="300em">
                     <p>Running events may be what we do but we also enjoy kicking back with a range of social activities - whether it’s go karting, watching musicals or hanging out in the pub.</p>
