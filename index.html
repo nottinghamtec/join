@@ -22,7 +22,7 @@
         <div id="topflex">
             <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:7em; padding: 0.5em; padding-right: 1em;" alt="TEC Logo, 'TEC' in serif with 'PA and Lighting' in a blue box surrounded by rings"></span>
             <div>                
-                <h1>Get Involved in Something Unique!</h1>
+                <h1>Get Involved with something unique!</h1>
                 <h2 style="margin-top: 0.2em;"><em>By students, for students</em></h2>
             </div>
         </div>
@@ -42,7 +42,7 @@
             </div>
             <div style="background-image: url('static/images/flash.jpg'); padding: 1em; grid-column: 1/2; grid-row: 2/3">
                 <h3>From bar nights to Grad Ball, we do it all! </h3>
-                <p>We provide sound, lighting and much more for events in and outside of the University of Nottingham Students’ Union. <br>As well as new events, we have a number of annual events which include Holi on the Downs, Sports and Societies Balls, and Graduation Ball.</p>
+                <p>TEC is a group of students that provide technical event support to other University of Nottingham Students' Union Groups and external companies. As well as new events, we have a number of annual events which include Holi on the Downs, Sports and Societies Balls, and Graduation Ball.</p>
             </div>
             <div class="blue" style="grid-column: 1/2">
                 <h2>New Members' Introduction</h2>
@@ -51,7 +51,11 @@
                 <div style="display: flex; align-items: center; background-color: rgba(30, 30, 30, 0.95); padding: 1em; margin-left: -1em; margin-right: -1em; padding-top: 0;" id="sessionheader">
                 <h3 style="flex-shrink: 0; margin-right: 0.5em">Next session:</h3>
                 {%if site.data.nmi.set%}
-                <h3>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h3>
+                <h3>{{site.data.nmi.date}} at {{site.data.nmi.time}} - {{site.data.nmi.location}}</h3>
+                    {%if site.data.nmi.set2%}
+                    <br><h3>or</h3><br>
+                    <h3>{{site.data.nmi.date2}} at {{site.data.nmi.time2}} - {{site.data.nmi.location2}}</h3>
+                    {%endif%}                
                 {%else%}
                 <h3>We don't have a New Members Introduction coming up right now - email <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
                 {%endif%}
