@@ -15,18 +15,15 @@ h1 {
 }
 
 body {
+    background-color: #000;
+}
+
+.container {
     background-color: #111;
     background-image: url("static/images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
     min-height: 100%;
-}
-
-.container {
-    margin: 2rem 4rem;
-    padding: 1rem;
-    background-color: #000;
-    background-color: rgba(24, 24, 24, 0.8);
 }
 
 .tighttop {
@@ -63,6 +60,11 @@ img {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 0.75em;
+
+    margin: 2rem 4rem;
+    padding: 1rem;
+    background-color: #000;
+    background-color: rgba(24, 24, 24, 0.8);
 }
 
 #topflex {
@@ -76,6 +78,42 @@ img {
     display: flex; 
     flex-wrap: nowrap; 
     align-items: center;
+}
+
+.speech-bubble { 
+    position: relative;
+    background: rgb(52, 81, 166);
+    border-radius: .4em; 
+}
+.speech-bubble:after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    width: 0;
+    height: 0; 
+    border: 20px solid transparent; 
+    border-right-color: rgb(52, 81, 166); 
+    border-left: 0;
+    margin-top: -20px;
+    margin-left: -20px; 
+}
+.speech-bubble-2 { 
+    position: relative; 
+    background: rgb(52, 81, 166);
+    border-radius: .4em; 
+} .speech-bubble-2:after { 
+    content: ''; 
+    position: absolute;
+    right: 0;
+    top: 50%; 
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left-color: rgb(52, 81, 166);
+    border-right: 0;
+    margin-top: -20px;
+    margin-right: -20px; 
 }
 
 @media only screen and (max-width: 768px) {
