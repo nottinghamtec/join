@@ -61,7 +61,7 @@ img {
     grid-template-columns: 2fr 1fr;
     grid-gap: 0.75em;
 
-    margin: 2rem 4rem;
+    margin: 1rem;
     padding: 1rem;
     background-color: #000;
     background-color: rgba(24, 24, 24, 0.8);
