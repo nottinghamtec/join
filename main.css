@@ -1,4 +1,4 @@
-h1, h2, h3, p, a, li {
+h1, h2, h3, h4, h5, p, a, li {
     font-family: "Open Sans", sans-serif;
     color: #fff;
 }
@@ -16,6 +16,17 @@ h1 {
 
 body {
     background-color: #212121;
+}
+
+button {
+  background-color: rgba(52, 81, 166, 0.7);
+  font-size: 1em;
+  padding: 0.5em;
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(52, 81, 166, 1);
 }
 
 .container {
