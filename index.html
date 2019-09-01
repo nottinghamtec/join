@@ -21,12 +21,12 @@
 <div style="background-color: #212121;">
     <h1 style="padding-top: 1em">Why join TEC?</h1>
 
-    <h1 style="padding-top: 0.5em">Simple.</h1>
+    <h1 style="padding-top: 0.5em; padding-bottom: 0.5em">Simple.</h1>
 
     <div style="display: grid; grid-template-columns: auto auto auto; justify-items: center; grid-row-gap: 1em; margin: 0.5em;">
             <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:5em; border-radius: 50%;">   
-            <div class="speech-bubble" style="grid-column-end: span 2; justify-self: stretch">
-                <h3>"Lorem Ipsum Dolor Sit Amet" - Sam</h3>
+            <div class="speech-bubble" style="grid-column-end: span 2; justify-self: stretch;">
+                <h3>"I love TEC because it puts me at the heart of University events" - Sam</h3>
             </div>
             <div class="speech-bubble-2" style="grid-column-end: span 2; justify-self: stretch">
                 <h3>"Lorem Ipsum Dolor Sit Amet" - Adam</h3>
@@ -34,46 +34,46 @@
             <img src="https://www.nottinghamtec.co.uk/imgs/committee/adam.jpg" style="width:5em; border-radius: 50%">
             <img src="https://www.nottinghamtec.co.uk/imgs/committee/arona.jpg" style="width:5em; border-radius: 50%">
             <div class="speech-bubble" style="grid-column-end: span 2; justify-self: stretch">
-                <h3>"Lorem Ipsum Dolor Sit Amet" - Arona</h3>
+                <h3>"Honestly, I'm just here for the free food 😛" - Arona</h3>
             </div>
      </div>
 
-    <div id="topflex"> 
+    <div style="background-image: url('static/images/flash.jpg'); padding: 1em; border-radius: 0.2em"> 
        <h1>Get Involved with Something Unique!</h1>
        <h2 style="margin-top: 0.2em;"><em>By students, for students</em></h2>
     </div>
-</div>
-<div class="container">
-        <div class="parent">
-            <!---I'm so so sorry, future maintainers. Basically, what happens is that on mobile the layout is set to block, whereas on desktop it is grid. Therefore the content is laid out in the HTML in the order it is meant to appear on mobile,  then on desktop it is rearranged by the grid into a totally different order. Have fun! --->
-            <div style="background-image: url('static/images/flash.jpg'); padding: 1em; grid-column: 1/2; grid-row: 2/3">
-                <h3>From bar nights to Grad Ball, we do it all! </h3>
-                <p>TEC is a group of students that provide technical event support to other University of Nottingham Students' Union Groups and external companies. As well as new events, we have a number of annual events which include Holi on the Downs, Sports and Societies Balls, and Graduation Ball.</p>
-            </div>
-            <div class="blue" style="grid-column: 1/2">
-                <h2>New Members' Introduction</h2>
-            </div>
-            <div class="blue" style="grid-column: 1/2;">
-                <div style="display: flex; align-items: center; background-color: rgba(30, 30, 30, 0.95); padding: 1em; margin-left: -1em; margin-right: -1em; padding-top: 0;" id="sessionheader">
-                <h3 style="flex-shrink: 0; margin-right: 0.5em">Next session:</h3>
-                {%if site.data.nmi.set%}
-                <h3>{{site.data.nmi.date}} at {{site.data.nmi.time}} - {{site.data.nmi.location}}</h3>
-                    {%if site.data.nmi.set2%}
-                    <br><h3>or</h3><br>
-                    <h3>{{site.data.nmi.date2}} at {{site.data.nmi.time2}} - {{site.data.nmi.location2}}</h3>
-                    {%endif%}                
-                {%else%}
-                <h3>We don't have a New Members Introduction coming up right now - email <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
-                {%endif%}
-                </div>
-                <div style="text-align: justify;">
-                    <p>Are you intrested in the technical side of events? Why not come along to one of our New Members’ Introduction sessions, where we will go through some of our huge range of kit and how to use it. No experience is required - all knowledge levels are welcome. We will provide you with the training required to be part of our team, so come along and see what it’s all about. TEC is all about getting stuck in!</p>
-                    <p>Once you’ve attended a New Members’ Introduction, you can come along to any TEC event. Coming along doesn't mean you're committing to TEC - why not come and try it out? We'd love to have you as part of the team.</p>
-                </div>
-                <br>
-            </div>
-            <div class="blue" style="grid-column: 1/3; grid-row: 1/2">
-            <div style="text-align: left">
+    <div>
+         <p>We are a UoNSU Student Group providing technical services to the Union and other Groups, the University and external companies. We work on a range of events, from gigs at London's O2 to student back gardens.</p> 
+         <h3><em>You</em> can be one of the volunteers making it continue year on year.</h3>
+    </div>
+    <div class="blue" style="grid-column: 1/2">
+        <h2>New Members' Introduction</h2>
+    </div>
+    <div class="blue" style="grid-column: 1/2;">
+        <div style="display: flex; align-items: center; background-color: rgba(30, 30, 30, 0.95); padding: 1em; margin-left: -1em; margin-right: -1em; padding-top: 0;" id="sessionheader">
+        <h3 style="text-align: center">Sunday 6th October @ 11:00 <br><em>or</em><br> Wednesday 11th October @ 18:00</h3>
+        <h3>The Studio, Portland Building, University Park, Nottingham, NG7 2RD</h3>
+        </div>
+        <div style="text-align: justify;">
+            <p>TEC is all about getting stuck in - Why not come along to a New Members' Introduction? We'll introduce you to some of our kit and how to use it. No experience is required and once you’ve attended, you can come along to any TEC event.</p>
+        </div>
+        <br>
+    </div>
+    <h3>Don't think we're only about hard work!</h3>
+    <div style="background: url('static/images/social.jpg') no-repeat; background-size: cover;">
+        <p style="color: #fff; padding-top: 6em; text-align: justify"><span style="background-color:black">Running events may be what we do but we also enjoy kicking back with a range of social activities - whether it’s go karting, watching musicals or hanging out in the pub.</span></p>
+    </div>
+    <div style="text-align: center;">
+        <h3>TEC provides extensive training</h3>
+        <img src="static/images/van.jpg" alt="Van Logo" width="200em" style="float: left" class="no-mobile">
+        <p>On everything from setting up a small event to balanced audio or lighting design. As well as our in-house training, you can learn to drive our van and trailer, as well as attend First Aid and Fire Safety training provided by the Students’ Union.</p>
+    </div>
+    <div style="text-align: center">
+        <button type="button"><a href="https://www.su.nottingham.ac.uk/student-media-groups/tec/">Sign Up!</a></button>
+    </div>
+    <h5 style="color: gray">This'll take you to the SU website (you'll need to sign in there) where you can add a membership to TEC. It's free and always will be.</h5>
+    <h3>Find out more: </h3>    
+    <div style="text-align: left" class="blue">
                     <div id="contact">
                         <h2 id="contact-element" style="margin-right: 1em"><a href="mailto:info@nottinghamtec.co.uk"><i class="fas fa-envelope"></i></a></h2>
                         <h2 id="contact-element" style="margin-right: 1em"><a href="https://facebook.com/nottinghamtec"><i class="fab fa-facebook"></i></a></h2>
@@ -84,25 +84,9 @@
                     </div>
                 </div>
             </div>
-            <div class="blue" style="grid-column: 2/3; grid-row: 2/3">
-                <h2>About Us</h2>
-            </div>
-            <div style="grid-column: 2/3; grid-row: 3/5">
-                <div style="text-align: center;">
-                    <h3>TEC provides extensive training</h3>
-                    <img src="static/images/van.jpg" alt="Van Logo" width="200em" style="float: left" class="no-mobile">
-                    <p>On everything from setting up a small event to balanced audio or lighting design. As well as our in-house training, you can learn to drive our van and trailer, as well as attend First Aid and Fire Safety training provided by the Students’ Union.</p>
-                    <h>Don't think we're only about hard work!</h3>
-                    <img src="static/images/social.jpg" alt="TEC Member on High Ropes" width="300em">
-                    <p>Running events may be what we do but we also enjoy kicking back with a range of social activities - whether it’s go karting, watching musicals or hanging out in the pub.</p>
-                </div>
-            </div>
-            <div style="text-align: center">
-            <button type="button"><a href="https://www.su.nottingham.ac.uk/student-media-groups/tec/">Sign Up!</a></button>
-            </div>
-            <h5>This'll take you to the SU website (you'll need to sign in there) where you can add a membership to TEC. It's free and always will be.</h5>
-            <!---End Grid--->
-        </div>
+    </div>
+<div class="container">
+        <div class="parent">
         <div style="display: flex">
             <img src="static/images/tec_logo_white.png" id="mainlogo" style="width:7em; padding: 0.5em; padding-right: 1em;" alt="TEC Logo, 'TEC' in serif with 'PA and Lighting' in a blue box surrounded by rings">
             <div>            
