@@ -15,6 +15,7 @@ h1 {
 
 body {
     background-color: #212121;
+    margin: 0;
 }
 
 button {
@@ -29,6 +30,11 @@ button:hover {
   background-color: rgba(52, 81, 166, 1);
 }
 
+.container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 .blue {
     background-color: rgba(52, 81, 166, 0.5);
 }
@@ -39,40 +45,6 @@ button:hover {
 
 .fa-globe {
     color: #fff;
-}
-
-.speech-bubble { 
-    position: relative;
-    background: rgb(52, 81, 166);
-    border-radius: .4em; 
-}
-.speech-bubble:after {
-    content: ''; 
-    position: absolute; 
-    left: 0; 
-    top: 50%; 
-    width: 0;
-    height: 0; 
-    border: 20px solid transparent; 
-    border-right-color: rgb(52, 81, 166); 
-    border-left: 0;
-    margin: -20px; 
-}
-.speech-bubble-2 { 
-    position: relative; 
-    background: rgb(52, 81, 166);
-    border-radius: .4em; 
-} .speech-bubble-2:after { 
-    content: ''; 
-    position: absolute;
-    right: 0;
-    top: 50%; 
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-left-color: rgb(52, 81, 166);
-    border-right: 0;
-    margin: -20px;
 }
 
 .floating {
