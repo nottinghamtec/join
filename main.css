@@ -99,9 +99,6 @@ button:hover {
         flex-wrap: wrap;
         font-size: 1em;
         justify-content: space-around;
-        margin: -1em;
-        margin-top: 1em;
-        padding-bottom: 1em;
     }
 
     #contact-element {
