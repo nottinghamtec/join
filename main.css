@@ -75,6 +75,11 @@ button:hover {
     margin: -20px;
 }
 
+.floating {
+    border-radius: 0.1em;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+}
+
 #contact {
     display: flex; 
     flex-wrap: nowrap; 
