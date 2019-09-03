@@ -34,6 +34,10 @@ button:hover {
 .container {
     margin-left: 0.5em;
     margin-right: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5em;
 }
 
 .blue {
@@ -60,6 +64,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
+
     h1 {
         font-size: 2em;
         text-align: center;
