@@ -67,7 +67,7 @@ p {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 40em) {
+@media only screen and (min-width: 600px) {
     .container {
         grid-template-columns: 1fr 2fr;
     }
@@ -85,7 +85,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 2em;
         text-align: center;
