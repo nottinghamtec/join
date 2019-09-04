@@ -35,6 +35,11 @@ p {
   text-align: justify;
 }
 
+.headshot {
+    width:5em;
+    border-radius: 50%;
+}
+
 .container {
     margin-left: 0.5em;
     margin-right: 0.5em;
