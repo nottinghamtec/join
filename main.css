@@ -89,8 +89,10 @@ p {
         justify-self: center;
     }
     #socialimg {
-        height: 10em;
-        width: auto;
+        width: 30%;
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 2em;
     }
 }
 
