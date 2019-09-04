@@ -35,7 +35,7 @@ button:hover {
     margin-left: 0.5em;
     margin-right: 0.5em;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 0.5em;
 }
@@ -63,11 +63,21 @@ button:hover {
     justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        display: block;
+@media screen and (min-width: 40em) {
+    .container {
+        grid-template-columns: 1fr 2fr;
     }
+    .desktop-wide {
+        grid-column: span 2;
+    }
+    #nmi {
+        align-self: start; 
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
 
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 2em;
         text-align: center;
