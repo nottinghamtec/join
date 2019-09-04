@@ -75,6 +75,10 @@ button:hover {
         grid-column: 2;
         grid-row: 2;
     }
+    #why {
+        align-self: center;
+        justify-self: center;
+    }
 }
 
 @media only screen and (max-width: 768px) {
