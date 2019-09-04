@@ -83,6 +83,10 @@ p {
         align-self: center;
         justify-self: center;
     }
+    #socialimg {
+        height: 10em;
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
