@@ -20,7 +20,7 @@
 
 <body>
   <header>
-    <div style="background-image: url('static/images/flash.jpg'); padding: 0; padding-top: 0.2em" class="floating">
+    <div id="header-background" style="background-image: url('static/images/flash.jpg');" class="floating">
       <h1>Get Involved with Something Unique!</h1>
       <h2 style="margin-top: 0.2em; padding-bottom: 0.5em"><em>By students, for students</em></h2>
     </div>
@@ -28,29 +28,29 @@
   <main>
     <div class="container">
       <div class="desktop-wide">
-        <p>TEC are a UoNSU Student Group providing technical services to the Union and other Groups, the University and external companies. We work on a range of events, from gigs at London's O2 to student back gardens.</p>
+        <p>TEC is a UoNSU Student Group providing technical services to the Union and other Groups, the University and external companies. We work on a range of events, from gigs at London's O2 to student back gardens.</p>
         <h3><em>You</em> can be one of the volunteers making it continue year on year.</h3>
       </div>
-      <div id="why">
-          <h1>Why join TEC?</h1>
-          <h1 style="padding-top: 0.5em; padding-bottom: 0.5em">Simple.</h1>
-      </div>
-      <div style="display: grid; grid-template-columns: min-content auto; justify-items: center; align-items: center; grid-gap: .5em;">
+      <div id="testemonial-grid">
+        <div id="why" style="grid-column: span 2;">
+            <h1>Why join TEC?</h1>
+            <h1 style="padding-top: 0.5em; padding-bottom: 0.5em">Simple.</h1>
+        </div>
         <img src="https://www.nottinghamtec.co.uk/imgs/committee/sam.jpg" style="width:5em; border-radius: 50%;">
-        <div class="blue floating">
-          <h3 style="margin-left: 0.5em; margin-right: 0.5em;">"TEC puts me at the heart of uni life" - Sam</h3>
+        <div class="blue floating testemonial-quote">
+          <h3>"TEC puts me at the heart of uni life" - Sam</h3>
         </div>
         <img src="static/images/jess.jpg" class="headshot">
-        <div class="blue floating">
-          <h3 style="margin-left: 0.5em; margin-right: 0.5em;">"Genuinely the coolest group to join" - Jess </h3>
+        <div class="blue floating testemonial-quote">
+          <h3>"Genuinely the coolest group to join" - Jess </h3>
         </div>
         <img src="static/images/mattsface.jpeg" class="headshot">
-        <div class="blue floating">
-          <h3 style="margin-left: 0.5em; margin-right: 0.5em;">"Running events in our team gives me a sense of pride like nothing else" - Matt </h3>
+        <div class="blue floating testemonial-quote">
+          <h3>"Running events in our team gives me a sense of pride like nothing else" - Matt </h3>
         </div>
         <img src="https://www.nottinghamtec.co.uk/imgs/committee/arona.jpg" class="headshot">
-        <div class="blue floating">
-          <h3 style="margin-left: 0.5em; margin-right: 0.5em;">"Honestly, I'm just here for the free food 😛" - Arona</h3>
+        <div class="blue floating testemonial-quote">
+          <h3>"Honestly, I'm just here for the free food 😛" - Arona</h3>
         </div>
       </div>
       <div id="nmi">
@@ -69,7 +69,7 @@
           <img id="socialimg" src="static/images/social.jpg" class="floating">
           <p>Running events may be what we do but we also enjoy kicking back with a range of social activities - whether it’s go karting, watching musicals or hanging out in the pub.</p>
       </div>
-      <div class="desktop-wide">
+      <div class="desktop-wide" id="signup">
           <div style="text-align: center">
             <button type="button"><a href="https://www.su.nottingham.ac.uk/student-media-groups/tec/">Sign Up!</a></button>
           </div>
@@ -91,7 +91,7 @@
     </div>
     <div style="background-image: url('static/images/background.jpg'); background-size: cover; padding-top: 0.5em; padding-bottom: 0.5em">
       <div style="display: flex">
-        <img src="static/images/tec_logo_white.png" style="width:7em; padding: 0.5em;" alt="TEC Logo, 'TEC' in serif with 'PA and Lighting' in a blue box surrounded by rings">
+        <img src="static/images/tec_logo_white.png" style="width:7em; padding: 0.5em; object-fit: contain" alt="TEC Logo, 'TEC' in serif with 'PA and Lighting' in a blue box surrounded by rings">
         <div>
           <i class="fas fa-user" style="padding-bottom: 0.5em"> </i> <a href="https://members.nottinghamtec.co.uk">Members' Login</a>
           <br>
