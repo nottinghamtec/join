@@ -66,6 +66,15 @@ p {
     box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
 }
 
+.testemonial-quote {
+    width: 100%;
+}
+
+.testemonial-quote>h3 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 #contact {
     display: flex; 
     flex-wrap: nowrap; 
@@ -86,21 +95,15 @@ p {
     grid-gap: .5em;
 }
 
-.testemonial-quote {
-    width: 100%;
-}
-
-.testemonial-quote>h3 {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
 #signup>h5 {
     text-align: center
 }
 
 #header-background {
-    padding: 0; padding-top: 0.2em;
+    padding: 0; 
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+    background-image: url('static/images/flash.jpg');
     background-size: cover;
 }
 
@@ -144,5 +147,9 @@ p {
 
     .no-mobile {
         display: none;
+    }
+
+    #header-background {
+        padding-left: 0;
     }
 }
