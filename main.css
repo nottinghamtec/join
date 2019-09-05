@@ -72,9 +72,42 @@ p {
     justify-content: space-evenly;
 }
 
+#socialimg {
+    width: 100%;
+    height: auto;
+}
+
+#testemonial-grid {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-row: span 2;
+    justify-items: center;
+    align-items: center;
+    grid-gap: .5em;
+}
+
+.testemonial-quote {
+    width: 100%;
+}
+
+.testemonial-quote>h3 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#signup>h5 {
+    text-align: center
+}
+
+#header-background {
+    padding: 0; padding-top: 0.2em;
+    background-size: cover;
+}
+
 @media only screen and (min-width: 600px) {
     .container {
         grid-template-columns: 1fr 2fr;
+        grid-column-gap: 5em
     }
     .desktop-wide {
         grid-column: span 2;
@@ -93,6 +126,9 @@ p {
         float: left;
         margin-right: 1em;
         margin-bottom: 2em;
+    }
+    #header-background {
+        background-position-y: -450px;
     }
 }
 
