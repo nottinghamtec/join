@@ -99,6 +99,11 @@ p {
     text-align: center
 }
 
+#header-background {
+    padding: 0; padding-top: 0.2em;
+    background-size: cover;
+}
+
 @media only screen and (min-width: 600px) {
     .container {
         grid-template-columns: 1fr 2fr;
@@ -121,6 +126,9 @@ p {
         float: left;
         margin-right: 1em;
         margin-bottom: 2em;
+    }
+    #header-background {
+        background-position-y: -450px;
     }
 }
 
