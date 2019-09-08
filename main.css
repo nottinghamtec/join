@@ -113,6 +113,9 @@ p {
         grid-column-gap: 5em
     }
     .desktop-wide {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
         grid-column: span 2;
     }
     #nmi {
@@ -125,10 +128,9 @@ p {
         justify-self: center;
     }
     #socialimg {
-        width: 30%;
-        float: left;
-        margin-right: 1em;
-        margin-bottom: 2em;
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 40%;
     }
     #header-background {
         background-position-y: -450px;
