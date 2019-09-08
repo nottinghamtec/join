@@ -95,7 +95,7 @@ p {
     grid-gap: .5em;
 }
 
-#signup>h5 {
+#signup>h5, #signup>h4 {
     text-align: center
 }
 
