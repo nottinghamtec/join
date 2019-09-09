@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, a, li {
+h1, h2, h3, h4, h5, p, a, li, span {
     font-family: "Open Sans", sans-serif;
     color: #fff;
 }
@@ -27,8 +27,9 @@ button {
 }
 
 button:hover {
-  background-color: rgba(52, 81, 166, 1);
+  -webkit-filter: brightness(150%);
   box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+  transition: all .5s ease;
 }
 
 p {
@@ -77,6 +78,29 @@ p {
     margin-right: 0.5em;
 }
 
+.header {
+    border-radius: 0.1em;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+    background-color: rgba(52, 81, 166, 0.5);
+    padding: 0.5em;
+}
+
+.no-decor {
+    text-decoration: none;
+}
+
+.contact-element {
+    border-radius: 0;
+    border-right: solid 1px white;
+    border-left: solid 1px white;
+    flex: 1 1 auto;
+}
+
+.contact-element:hover {
+    -webkit-filter: brightness(110%);
+    transition: all .1s ease;
+}
+
 #contact {
     display: flex; 
     flex-wrap: nowrap; 
@@ -107,17 +131,6 @@ p {
     padding-left: 0.5em;
     background-image: url('static/images/flash.jpg');
     background-size: cover;
-}
-
-.header {
-    border-radius: 0.1em;
-    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
-    background-color: rgba(52, 81, 166, 0.5);
-    padding: 0.5em;
-}
-
-.no-decor {
-    text-decoration: none;
 }
 
 @media only screen and (min-width: 600px) {
