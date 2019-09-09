@@ -47,6 +47,7 @@ p {
     grid-template-columns: 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 0.5em;
+    grid-auto-flow: row
 }
 
 .blue {
@@ -68,6 +69,7 @@ p {
 
 .testemonial-quote {
     width: 100%;
+    background-color: rgba(27, 42, 88, 0.5);
 }
 
 .testemonial-quote>h3 {
@@ -127,7 +129,6 @@ p {
     }
     #nmi {
         align-self: start;
-        grid-row: 2;
     }
     #why {
         align-self: center;
