@@ -18,6 +18,11 @@ h1 {
     text-align: left;
 }
 
+img {
+    width: 100%;
+    height: auto
+}
+
 body {
     background-color: #212121;
     margin: 0;
@@ -55,6 +60,15 @@ p {
     grid-auto-flow: row;
     width: 90%;
     margin: 0 auto;
+    grid-template-areas:
+        'head1'
+        'headimg'
+        'head2'
+        'signup'
+        'testemonial'
+        'nmi'
+        'benefits'
+        'socials';
 }
 
 .blue {
@@ -109,7 +123,6 @@ p {
 #testemonial-grid {
     display: grid;
     grid-template-columns: min-content auto;
-    grid-row: span 2;
     justify-items: center;
     align-items: center;
     grid-gap: .5em;
@@ -147,9 +160,12 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3em;
         width: 85%;
-    }
-    .desktop-wide {
-        grid-column: span 2;
+        grid-template-areas:
+        'headimg        head1'
+        'headimg        head2'
+        'signup        signup'
+        'testemonial      nmi'
+        'benefits     socials';
     }
     #nmi {
         align-self: start;

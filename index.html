@@ -33,12 +33,17 @@
   </header>
   <main>
     <div class="container">
-      <div class="desktop-wide">      
+      <div style="grid-area: head1">      
         <p>
           TEC is a UoNSU Student Group providing technical services to the Union, other Student Groups, the University and
           external clients. We work on a range of events, from gigs at London's O2 to student back gardens. We own, maintain and operate our own lighting, sound and AV equipment.
-            <img id="socialimg" src="static/images/gb.jpg" class="floating">
-          <br />
+        </p>
+      </div>
+      <div style="grid-area: headimg">
+        <img src="static/images/gb.jpg" class="floating">
+      </div>
+      <div style="grid-area: head2">
+        <p>
           TEC involves a wide variety of activities:
         </p>
         <ul>
@@ -51,9 +56,9 @@
         <h3><em>You</em> can be one of the volunteers making it continue year on year.</h3>
       </div>
 
-      <div class="desktop-wide" id="signup"> <!--Signup-->
-        <div style="text-align: center">
-          <button type="button" style="background: #078148">
+      <div id="signup" style="grid-area: signup">
+        <div style="text-align: center;">
+          <button type="button" style="background: #078148; border-top: 3em">
             <a href="https://www.su.nottingham.ac.uk/student-media-groups/tec/">Sign Up!</a>
           </button>
         </div>
@@ -63,7 +68,7 @@
         </p>
       </div>
 
-      <div> <!--Testemonial-->
+      <div style="grid-area: testemonial">
         <h2 class="header">Why join TEC? Simple.</h2>
         <p>Our members say:</p>
         <div id="testemonial-grid">
@@ -82,7 +87,7 @@
         </div>
       </div>
 
-      <div id="nmi"> <!--NMI-->
+      <div id="nmi" style="grid-area: nmi">
         <h2 class="header">New Members' Introduction</h2>
         <p>TEC is all about getting stuck in - Why not come along to a New Members' Introduction? We'll introduce you to
           some of our kit and how to use it. No experience is required and once you’ve attended, you can
@@ -95,14 +100,14 @@
         </div>
       </div>
 
-      <div> <!--What can I get-->
+      <div style="grid-area: benefits">
         <h2 class="header">What can <em>I</em> get from TEC?</h2>
           <img id="socialimg" src="static/images/wa.jpg" class="floating">
           <p>You can learn how to maintain and operate equipment to industry standard. You'll acquire skills and experience that looks excellent on a CV - take it from any number of our members who are employed in the events industry. TEC provides an unparalleled opportunity for networking with fellow teccies and clients alike. You'll make friends, not just colleagues. Most of all, it's great fun!</p>
       </div>
 
-      <div> <!--Social-->
-        <h2 class="header">Socials</h2>
+      <div>
+        <h2 class="header" style="grid-area: socials">Socials</h2>
           <img id="socialimg" src="static/images/social.jpg" class="floating">
           <p>Running events may be what we do but we also enjoy kicking back and relaxing. We're often found in the pub enjoying our 'crew food' - TEC provides food for its members on or after events. We also hold other socials such as bowling and go-karting - usually paid for by TEC.</p>
       </div>
