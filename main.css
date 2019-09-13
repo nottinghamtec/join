@@ -52,7 +52,9 @@ p {
     grid-template-columns: 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 0.5em;
-    grid-auto-flow: row
+    grid-auto-flow: row;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .blue {
@@ -132,13 +134,19 @@ p {
     padding: 0.5em;
 }
 
-@media only screen and (min-width: 600px) {
+.nmi-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212129;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+@media only screen and (min-width: 800px) {
     .container {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3em;
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
+        width: 85%;
     }
     .desktop-wide {
         grid-column: span 2;
@@ -164,7 +172,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     h1 {
         font-size: 2em;
         text-align: center;
@@ -182,3 +190,10 @@ p {
         padding-left: 0;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}
+
