@@ -26,10 +26,16 @@
 
 <body>
   <header>
-    <div id="header-background" class="floating">
-      <h1>Get Involved with Something Unique!</h1>
-      <h2 style="margin-top: 0.2em; padding-bottom: 0.5em;"><em>By students, for students</em></h2>
+    <div id="header-background" class="floating" style="display: flex; flex-wrap: nowrap;">
+      <div>
+        <h1>Get Involved with Something Unique!</h1>
+        <h2 style="margin-top: 0.2em; padding-bottom: 0.5em;"><em>By students, for students</em></h2>
+      </div>
+      <div class="no-mobile" style="margin-left: auto; margin-top: auto; margin-bottom: auto; margin-right: 2em;">
+        <img src="static/images/tec_logo_white.png" id="headerlogo" style="height: 120px; width: auto">
+      </div>
     </div>
+    <div style="height: 16px"></div>
   </header>
   <main>
     <div class="container">
@@ -39,7 +45,7 @@
           external clients. We work on a range of events, from gigs at London's O2 to student back gardens. We own, maintain and operate our own lighting, sound and AV equipment.
         </p>
       </div>
-      <div style="grid-area: headimg">
+      <div style="grid-area: headimg; align-self: center">
         <img src="static/images/gb.jpg" class="floating">
       </div>
       <div style="grid-area: head2">
@@ -135,8 +141,10 @@
     <div
       style="background-image: url('static/images/background.jpg'); background-size: cover; padding-top: 0.5em; padding-bottom: 0.5em">
       <div style="display: flex">
-        <img src="static/images/tec_logo_white.png" style="width:7em; padding: 0.5em; object-fit: contain"
+        <div>
+        <img src="static/images/tec_logo_white.png" style="width:7em; height: auto; padding: 0.5em; object-fit: contain"
           alt="TEC Logo, 'TEC' in serif with 'PA and Lighting' in a blue box surrounded by rings">
+        </div>
         <div>
           <i class="fas fa-user" style="padding-bottom: 0.5em"> </i> <a
             href="https://members.nottinghamtec.co.uk">Members' Login</a>
