@@ -155,6 +155,10 @@ p {
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
+.header-text * {
+    text-align: center;
+}
+
 @media only screen and (min-width: 800px) {
     .container {
         grid-template-columns: 1fr 1fr;
@@ -185,6 +189,10 @@ p {
 
     .no-desktop {
         display: none;
+    }
+
+    .header-text * {
+        text-align: left;
     }
 }
 
