@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, p, a, li {
+:root {
+  --blue: rgba(52, 81, 166, 0.5);
+  --darkblue: rgba(27, 42, 88, 0.5);
+}
+
+h1, h2, h3, h4, h5, p, a, li, span {
     font-family: "Open Sans", sans-serif;
     color: #fff;
 }
@@ -13,13 +18,18 @@ h1 {
     text-align: left;
 }
 
+img {
+    width: 100%;
+    height: auto
+}
+
 body {
     background-color: #212121;
     margin: 0;
 }
 
 button {
-  background-color: rgba(52, 81, 166, 0.7);
+  background-color: var(--blue);
   font-size: 1.5em;
   padding: 0.5em;
   border: none;
@@ -47,10 +57,22 @@ p {
     grid-template-columns: 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 0.5em;
+    grid-auto-flow: row;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-areas:
+        'head1'
+        'headimg'
+        'head2'
+        'signup'
+        'testemonial'
+        'nmi'
+        'benefits'
+        'socials';
 }
 
 .blue {
-    background-color: rgba(52, 81, 166, 0.5);
+    background-color: var(--blue);
 }
 
 .fa-user {
@@ -68,11 +90,23 @@ p {
 
 .testemonial-quote {
     width: 100%;
+    background-color: var(--darkblue);
 }
 
 .testemonial-quote>h3 {
     margin-left: 0.5em;
     margin-right: 0.5em;
+}
+
+.header {
+    border-radius: 0.1em;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+    background-color: var(--blue);
+    padding: 0.5em;
+}
+
+.no-decor {
+    text-decoration: none;
 }
 
 #contact {
@@ -89,13 +123,12 @@ p {
 #testemonial-grid {
     display: grid;
     grid-template-columns: min-content auto;
-    grid-row: span 2;
     justify-items: center;
     align-items: center;
     grid-gap: .5em;
 }
 
-#signup>h5 {
+#signup>* {
     text-align: center
 }
 
@@ -107,35 +140,55 @@ p {
     background-size: cover;
 }
 
-@media only screen and (min-width: 600px) {
+.header {
+    border-radius: 0.1em;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+    background-color: rgba(52, 81, 166, 0.5);
+    padding: 0.5em;
+}
+
+.nmi-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212129;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+@media only screen and (min-width: 800px) {
     .container {
-        grid-template-columns: 1fr 2fr;
-        grid-column-gap: 5em
-    }
-    .desktop-wide {
-        grid-column: span 2;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3em;
+        width: 85%;
+        grid-template-areas:
+        'headimg        head1'
+        'headimg        head2'
+        'signup        signup'
+        'testemonial      nmi'
+        'benefits     socials';
     }
     #nmi {
-        align-self: start; 
-        grid-column: 2;
-        grid-row: 2;
+        align-self: start;
     }
     #why {
         align-self: center;
         justify-self: center;
     }
     #socialimg {
-        width: 30%;
-        float: left;
-        margin-right: 1em;
-        margin-bottom: 2em;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
     }
     #header-background {
         background-position-y: -450px;
     }
+
+    .no-desktop {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     h1 {
         font-size: 2em;
         text-align: center;
@@ -153,3 +206,10 @@ p {
         padding-left: 0;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}
+
