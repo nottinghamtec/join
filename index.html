@@ -96,17 +96,30 @@
 <h2 class="header">New Members' Introduction</h2>
         <p>TEC is all about getting stuck in ⁠— why not come along to a New Members' Introduction? We'll introduce you to some of our kit and how to use it. No experience is required and once you’ve attended, you can come along to any TEC event.</p>
         <div class="nmi-location">
-          {%if site.data.nmi.set%}
-        <h3>{{site.data.nmi.date}} at {{site.data.nmi.time}} in {{site.data.nmi.location}}</h3>
+        {%if site.data.nmi.set%}
+        <h3 style="text-align:center;font-size:20px">{{site.data.nmi.date}} @ {{site.data.nmi.time}}
         {%if site.data.nmi.set2%}
-        <br><h3>or</h3><br>
-        <h3>{{site.data.nmi.date2}} at {{site.data.nmi.time2}} in {{site.data.nmi.location2}}</h3>
-        {%endif%}                
+        <br/><em>or</em><br/>{{site.data.nmi.date2}} @ {{site.data.nmi.time2}}
+        {%endif%}
+        </br{{site.data.nmi.date2}}>
+        <h3 style="margin-left: 0.5em; margin-right: 0.5em; text-align:center">{{site.data.nmi.location}}</h3>            
         {%else%}
-        <h3 style="text-align: center;">We don't have a New Members Introduction coming up right now - email <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
+        <h3 style="text-align: center;font-size:20px">We don't have a New Members Introduction coming up right now - email <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
         {%endif%}
         </div>
       </div>
+      <!--
+      <div id="nmi" style="grid-area: nmi">
+        <h2 class="header">New Members' Introduction</h2>
+        <p>TEC is all about getting stuck in ⁠— why not come along to a New Members' Introduction? We'll introduce you to some of our kit and how to use it. No experience is required and once you’ve attended, you can come along to any TEC event.</p>
+        <div class="nmi-location">
+          <h3 style="text-align: center;">Sunday 6th October @ 11:00 <br><em>or</em><br> Wednesday 9th October @ 18:00
+          </h3>
+          <h3 style="margin-left: 0.5em; margin-right: 0.5em; text-align: center">The Studio, Portland Building,
+            University Park, Nottingham, NG7 2RD</h3>
+        </div>
+      </div>
+      -->
 
       <div style="grid-area: benefits">
         <h2 class="header">What can I get from TEC?</h2>

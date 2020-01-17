@@ -1,11 +1,11 @@
 #Change 'set' to true or nothing will display!
-set: false
 #N.b. If adding a : seperator to your time, you must wrap it in '' or weird stuff happens
-time: '18:00'
-date: Wednesday 9th October
-location: The Studio, Portland Building, University Park, Nottingham, NG7 2RD
+set: true
+time: '16:00pm'
+date: Saturday 1st February
 
 set2: false
 time2: '18:00'
 date2: Wednesday 9th October
-location2: The Studio, Portland Building, University Park, Nottingham, NG7 2RD
+
+location: Welcome Zone, Portland Building, University Park, Nottingham, NG7 2RD
