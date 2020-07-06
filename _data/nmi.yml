@@ -1,6 +1,6 @@
 #Change 'set' to true or nothing will display!
 #N.b. If adding a : seperator to your time, you must wrap it in '' or weird stuff happens
-set: true
+set: false
 time: '16:00pm'
 date: Saturday 1st February
 
