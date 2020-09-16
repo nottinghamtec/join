@@ -13,7 +13,7 @@ h2, h3 {
 }
 
 h1 {
-    margin: 0.25rem; 
+    margin: 0.25rem;
     font-size: 3.75em;
     text-align: left;
 }
@@ -68,7 +68,8 @@ p {
         'testemonial'
         'nmi'
         'benefits'
-        'socials';
+        'socials'
+        'moose';
 }
 
 .blue {
@@ -110,8 +111,8 @@ p {
 }
 
 #contact {
-    display: flex; 
-    flex-wrap: nowrap; 
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
@@ -133,7 +134,7 @@ p {
 }
 
 #header-background {
-    padding: 0; 
+    padding: 0;
     padding-top: 0.2em;
     padding-left: 0.5em;
     background-image: url('static/images/flash.jpg');
@@ -169,7 +170,8 @@ p {
         'headimg        head2'
         'signup        signup'
         'testemonial      nmi'
-        'benefits     socials';
+        'benefits     socials'
+        'moose moose';
     }
     #nmi {
         align-self: start;

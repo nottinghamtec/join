@@ -29,7 +29,7 @@
     <div id="header-background" class="floating" style="display: flex; flex-wrap: nowrap; justify-content: center">
       <div class="header-text">
         <h1>Get Involved with Something Unique!</h1>
-        <h2 style="margin-top: 0.2em; padding-bottom: 0.5em;"><em>By students, for students</em></h2>
+        <h2 style="margin-top: 0.2em; padding-bottom: 0.5em; padding-left: 1em;"><em>By students, for students</em></h2>
       </div>
       <div class="no-mobile" style="margin-left: auto; margin-top: auto; margin-bottom: auto; margin-right: 2em;">
         <img src="static/images/tec_logo_white.png" id="headerlogo" style="height: 120px; width: auto">
@@ -97,40 +97,37 @@
         <p>TEC is all about getting stuck in ⁠— why not come along to a New Members' Introduction? We'll introduce you to some of our kit and how to use it. No experience is required and once you’ve attended, you can come along to any TEC event.</p>
         <div class="nmi-location">
         {%if site.data.nmi.set%}
-        <h3 style="text-align:center;font-size:20px">{{site.data.nmi.date}} @ {{site.data.nmi.time}}
+        <h3 style="text-align:center;font-size:20px;">{{site.data.nmi.date}} @ {{site.data.nmi.time}}
         {%if site.data.nmi.set2%}
         <br/><em>or</em><br/>{{site.data.nmi.date2}} @ {{site.data.nmi.time2}}
         {%endif%}
         </br{{site.data.nmi.date2}}>
         <h3 style="margin-left: 0.5em; margin-right: 0.5em; text-align:center">{{site.data.nmi.location}}</h3>
         {%else%}
-        <h3 style="text-align: center;font-size:20px">We don't have a New Members Introduction coming up right now - email <a href="mailto:info@nottinghamtec.co.uk">info@nottinghamtec.co.uk</a> and we'd be happy to set one up for you!</h3>
+        <h3 style="text-align: center;font-size:20px; padding: 2em;">We're still working out what an in-person introduction to TEC will look like in COVID. For now, <a href="https://www.facebook.com/groups/383219822702893/">join our prospective members Facebook group</a>!</h3>
         {%endif%}
         </div>
       </div>
-      <!--
-      <div id="nmi" style="grid-area: nmi">
-        <h2 class="header">New Members' Introduction</h2>
-        <p>TEC is all about getting stuck in ⁠— why not come along to a New Members' Introduction? We'll introduce you to some of our kit and how to use it. No experience is required and once you’ve attended, you can come along to any TEC event.</p>
-        <div class="nmi-location">
-          <h3 style="text-align: center;">Sunday 6th October @ 11:00 <br><em>or</em><br> Wednesday 9th October @ 18:00
-          </h3>
-          <h3 style="margin-left: 0.5em; margin-right: 0.5em; text-align: center">The Studio, Portland Building,
-            University Park, Nottingham, NG7 2RD</h3>
-        </div>
-      </div>
-      -->
 
       <div style="grid-area: benefits">
         <h2 class="header">What can I get from TEC?</h2>
           <img id="socialimg" src="static/images/wa.jpg" class="floating">
-          <p>You can learn how to maintain and operate equipment to a high standard. You'll acquire skills and experience which look excellent on a CV. Take it from any number of our members who are employed in the events industry! TEC provides an unparalleled opportunity for networking with fellow teccies and clients alike. You'll make friends, not just work with colleagues. Most of all, it's great fun!</p>
+          <p>We learn how to maintain and operate equipment to a high standard. You'll acquire skills and experience which look excellent on a CV. Take it from any number of our members who are employed in the events industry! TEC provides an unparalleled opportunity for networking with fellow teccies and clients alike. You'll make friends, not just work with colleagues. Most of all, it's great fun!</p>
       </div>
 
-      <div>
-        <h2 class="header" style="grid-area: socials">Socials</h2>
+      <div style="grid-area: socials">
+        <h2 class="header">Socials</h2>
           <img id="socialimg" src="static/images/social.jpg" class="floating">
           <p>Running events may be what we do but we also enjoy kicking back and relaxing. We're often found in the pub enjoying our 'crew food' — TEC provides food for its members on or after events. We also hold other socials such as Go-Ape, bowling and go-karting, usually paid for by TEC.</p>
+      </div>
+
+      <div style="grid-area: moose">
+        <!--- Mynd you, møøse bites Kan be pretti nasti... --->
+       <h2 class="header" style="grid-area: moose">What's with the moose?</h2>
+        <div style="display: flex; flex-direction: row;">
+           <img id="moose" src="static/images/poster.png" style="width: 500px; margin: 1em;"  style="grid-area: mooseimg">
+           <p style="grid-area: moosetext">The moose is TEC's mascot, seen here doing a rather good impression of Lord Kitchener to help us out with recruitment. Previously guardian of our van he has since been promoted to watch over our office in the Portland Building. The storeroom guarding job was already covered by a duck. (Yes, we know we're a bit odd. Promise the moose doesn't bite) Come by and say hi sometime! Or email him at moose@nottinghamtec.co.uk...</p>
+        </div>
       </div>
     </div>
   </main>
