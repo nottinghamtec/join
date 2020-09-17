@@ -45,6 +45,10 @@ p {
   text-align: justify;
 }
 
+main {
+  min-width: 0;
+}
+
 .headshot {
     width:5em;
     border-radius: 50%;
@@ -54,7 +58,7 @@ p {
     margin-left: 0.5em;
     margin-right: 0.5em;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-column-gap: 1em;
     grid-row-gap: 0.5em;
     grid-auto-flow: row;
@@ -214,6 +218,11 @@ p {
 
     #header-background {
         padding-left: 0;
+    }
+
+    #moose {
+        flex-direction: column !important;
+        align-items: center;
     }
 }
 
