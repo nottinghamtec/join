@@ -65,10 +65,7 @@ main {
     width: 90%;
     margin: 0 auto;
     grid-template-areas:
-        'head1'
-        'headimg'
-        'head2'
-        'signup'
+        'head'
         'testemonial'
         'nmi'
         'benefits'
@@ -170,9 +167,7 @@ main {
         grid-column-gap: 3em;
         width: 85%;
         grid-template-areas:
-        'headimg        head1'
-        'headimg        head2'
-        'signup        signup'
+        'head head'
         'testemonial      nmi'
         'benefits     socials'
         'moose moose';
