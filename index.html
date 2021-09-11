@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,13 +13,32 @@
   <meta property="og:url" content="https://join.nottinghamtec.co.uk">
   <meta property="og:title" content="Join TEC!">
 
-  {% include favicons.html %}
+  <link rel="apple-touch-icon" sizes="57x57" href="static/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="static/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="static/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="static/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="static/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="static/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="static/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="static/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="static/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="static/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="static/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="static/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="static/favicons/manifest.json">
+  <link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#3853a4">
+  <link rel="shortcut icon" href="static/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="static/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="static/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#333333">
 
   <link rel="stylesheet" href="main.css">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" defer>
 </head>
 
 <body>
@@ -96,16 +113,10 @@
 <h2 class="header">New Members' Introduction</h2>
         <p>TEC is all about getting stuck in ⁠— why not come along to a New Members' Introduction? We'll introduce you to some of our kit and how to use it. No experience is required and once you’ve attended, you can come along to any TEC event.</p>
         <div class="nmi-location">
-        {%if site.data.nmi.set%}
-        <h3 style="text-align:center;font-size:20px;">{{site.data.nmi.date}} @ {{site.data.nmi.time}}
-        {%if site.data.nmi.set2%}
-        <br/><em>or</em><br/>{{site.data.nmi.date2}} @ {{site.data.nmi.time2}}
-        {%endif%}
-        </br{{site.data.nmi.date2}}>
-        <h3 style="margin-left: 0.5em; margin-right: 0.5em; text-align:center">{{site.data.nmi.location}}</h3>
-        {%else%}
-        <h3 style="text-align: center;font-size:20px; padding: 2em;">We're still working out what an in-person introduction to TEC will look like in COVID. For now, <a href="https://www.facebook.com/groups/383219822702893/">join our prospective members Facebook group</a>!</h3>
-        {%endif%}
+        <h3 style="text-align:center;font-size:20px;">22/09/2021 (TBC)<br/>
+        <em>or</em><br/>
+        01/09/2021 (TBC)</br>
+        <h3 style="margin-left: 0.5em; margin-right: 0.5em; text-align:center">in The Studio, Portland Building</h3>
         </div>
       </div>
 
