@@ -35,6 +35,7 @@
   <meta name="theme-color" content="#333333">
 
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="popup.css">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -42,6 +43,7 @@
 </head>
 
 <body>
+  <div id="maincontent">
   <header>
     <div id="header-background" class="floating" style="display: flex; flex-wrap: nowrap; justify-content: center">
       <div class="header-text">
@@ -55,7 +57,7 @@
   </header>
   <main>
     <div class="container">
-      <div style="padding: .5em; grid-area: head; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('static/images/gb.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100vw; position: relative;
+      <div style="padding-top: .5em; padding-bottom: 0.5em; grid-area: head; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('static/images/gb.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100vw; position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -170,6 +172,50 @@
       </div>
     </div>
   </footer>
+  </div>
+<!-- for popup -->
+  <div id="overlay"></div>
+<div id="popupouter">
+<div id="popup" class="floating">
+  <div class="popupcontent">
+    <h1 class="header">
+      Freshers Week 2023
+    </h1>
+    <!-- <h2>we will be at the welcome fair inside David Ross on the 25th and 26th of september between 10am and 3pm as well as at the SB welcome fair on the wednesday so please come say high. We will be happy to answer any questions you have."
+    </h2> -->
+    <h2>
+      You can find us at the following welcome events:
+    </h2>
+    <ul>
+      <li>25/09/2023 10 till 3- welcome fair at david ross sports village</li>
+      <li>26/09/2023 10 till 3- welcome fair at david ross sports village</li>
+      <li>27/09/2023 - SB welcome fair</li>
+    </ul>
+    <h2>
+      Feel free to come by, get some free stuff, and ask us some questions.
+    </h2>
+    <div id= "popupclose" class="popupcontrols floating">
+      <span>Close</span>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  // Initialize Variables
+  var closePopup = document.getElementById("popupclose");
+  var overlay = document.getElementById("overlay");
+  var popup = document.getElementById("popup");
+  var popupouter = document.getElementById("popupouter");
+
+  // Close Popup Event
+  closePopup.onclick = function() {
+      overlay.style.display = 'none';
+      popup.style.display = 'none';
+      popupouter.style.display = 'none';
+  };
+
+</script>
+<!-- end of pop up section -->
 </body>
 
 </html>
