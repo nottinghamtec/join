@@ -88,6 +88,10 @@ main {
 .floating {
     border-radius: 0.1em;
     box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+    -webkit-border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    -ms-border-radius: 0.1em;
+    -o-border-radius: 0.1em;
 }
 
 .testemonial-quote {
