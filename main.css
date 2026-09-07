@@ -28,7 +28,6 @@ h3 {
 h1 {
     margin: 0.25rem;
     font-size: 3.75em;
-    text-align: left;
 }
 
 img {
@@ -172,9 +171,9 @@ main {
 }
 
 .header-background {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
     padding: 0;
     padding-top: 0.2em;
     padding-left: 0.5em;
@@ -202,8 +201,15 @@ main {
     }
 }
 
-.header-text * {
+.header-text {
+    grid-column: 2;
     text-align: center;
+}
+
+.header-logo {
+    grid-column: 3;
+    justify-self: end;
+    margin-right: 2em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -233,16 +239,12 @@ main {
         width: 60%;
     }
 
-    #header-background {
+    .header-background {
         background-position-y: -450px;
     }
 
     .no-desktop {
         display: none;
-    }
-
-    .header-text * {
-        text-align: left;
     }
 }
 
@@ -272,7 +274,7 @@ main {
         display: none;
     }
 
-    #header-background {
+    .header-background {
         padding-left: 0;
     }
 
